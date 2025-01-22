@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
+#home {
+    background-color: transparent;
+    width: 100%;
+    font-family: 'pt sans', sans-serif;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url('../../public/imgs/HeartofKYWebLogo.jpg') no-repeat center center fixed;
+    color: #f9f9f9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    width: 100%;
+    padding: 0;
+}
+
+#inspiration {
+    background-color: #f9f9f9;
+    border-top: #fc7017 10px solid;
+    border-bottom: #fc7017 10px solid;
+    height: 50vh;
+}
+
+.quote {
+    position: relative;
+    left: 35%;
+    width: 60%;
+    top: -25%;
+    padding: 1rem 2.5%;
+    font-family: 'Raleway', sans-serif;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: #fc7017 2px solid;
+    border-right: none;
+    background-color: #f9f9f9;
+}
+
+.quote p {
+    font-size: 1.5rem;
+}
+
+.quote p:first-child {
+    text-align: left;
+}
+
+.quote p:last-child {
+    text-align: right;
+}
+
+#inspiration .box {
+    content: '';
+    width: 55%;
+    height: 44%;
+    position: relative;
+    left: 0;
+    top: 40%;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mission {
+    background-color: #f9f9f9;
+    border-top: #fc7017 10px solid;
+    border-bottom: #fc7017 10px solid;
+}
+
+#members {
+    background-color: #f9f9f9;
+    border-top: #fc7017 10px solid;
+    border-bottom: #fc7017 10px solid;
+}
+
+#funding {
+    background-color: #f9f9f9;
+    border-top: #fc7017 10px solid;
+    border-bottom: #fc7017 10px solid;
+}
+
+footer {
+    margin-top: 2rem;
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer a:link, footer a:visited {
+    background-color: #f9f9f9;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+}

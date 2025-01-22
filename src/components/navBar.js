@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navBar.css';
 
-const NavBar = () => {
+function NavBar() {
     const [navClass, setNavClass] = useState('navbar');
 
     useEffect(() => {

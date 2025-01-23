@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/navBar.css';
+import './styles/navBar.css';
 
 function NavBar() {
     const [navClass, setNavClass] = useState('navbar');
@@ -10,6 +10,7 @@ function NavBar() {
             if (window.scrollY > 0) setNavClass('navbar scrolled');
             else setNavClass('navbar');
         };
+        
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);

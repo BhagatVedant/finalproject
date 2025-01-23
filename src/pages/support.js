@@ -5,6 +5,8 @@ import '../styles/support.css';
 import CasaroleSection from '../components/casaroleSection';
 
 function Support() {
+    const [sectionData, setSectionData] = useState(["newParents", "therapy", "caregivers"]);
+
     return (
         <div id="support">
             <Header
@@ -16,8 +18,9 @@ function Support() {
                 }
             />
             <main>
-                <CasaroleSection sectionName="newParents" />
-                <CasaroleSection sectionName="therapy" />
+                {sectionData.map((sectionName) => (
+                    <CasaroleSection sectionName={sectionName} />
+                ))}
             </main>
         </div>
     );

@@ -90,9 +90,6 @@ footer img {
     height: 2rem;
 }
 
-
-
-
 #mission{
     border-top: #1c1c1c 10px solid;
     max-width: 80vw;
@@ -122,16 +119,11 @@ footer img {
     text-align: left;
     margin-right:0;
     margin-top: .5em;
-    
-    
-    
-
 }
 
 #mission .container p{
     margin-top: 0;
     padding-right: 0.5rem;
-
 }
 
 #Space1{
@@ -139,5 +131,4 @@ footer img {
     max-width: 80vw;
     display: flex;
     background-color:#1c1c1c;;
-
 }

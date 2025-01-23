@@ -21,8 +21,8 @@ function CasaroleSection({ sectionName }) {
         fetch("./kyKids.json")
             .then((response) => response.json())
             .then((data) => {
-                const secData = data.filter((item) => item.sectionId === sectionName);
-                setSectionData(secData);
+                const tempData = data.filter((item) => item.sectionId === sectionName);
+                setSectionData(tempData);
             })
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionName]);
@@ -47,14 +47,14 @@ function CasaroleSection({ sectionName }) {
     function handlePrev() {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setCurrentIndex((prev) => prev - 1);
+        setCurrentIndex((prev) => prev - 2);
     }
 
     //Handle the next button click
     function handleNext() {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setCurrentIndex((prev) => prev + 1);
+        setCurrentIndex((prev) => prev + 2);
     }
 
     //Handle the transition end
@@ -73,7 +73,7 @@ function CasaroleSection({ sectionName }) {
             setCurrentIndex((prev) => prev - dataLength);
 
             requestAnimationFrame(() => {
-                wrapperRef.current.style.transition = "transform 0.5s ease";
+                wrapperRef.current.style.transition = "transform 0.8s ease-in-out";
             });
         }
 
@@ -84,7 +84,7 @@ function CasaroleSection({ sectionName }) {
             setCurrentIndex((prev) => prev + dataLength);
 
             requestAnimationFrame(() => {
-                wrapperRef.current.style.transition = "transform 0.5s ease";
+                wrapperRef.current.style.transition = "transform 0.8s ease-in-out";
             });
         }
     }
@@ -94,7 +94,7 @@ function CasaroleSection({ sectionName }) {
     useEffect(() => {
         if (!wrapperRef.current) return;
         wrapperRef.current.style.transition = isTransitioning
-            ? "transform 0.5s ease"
+            ? "transform 0.8s ease-in-out"
             : "none";
     }, [isTransitioning]);
 
@@ -110,7 +110,7 @@ function CasaroleSection({ sectionName }) {
     function renderCards() {
         if (sectionData.length <= 4) {
             const basisValue = 100 / sectionData.length;
-        
+
             return (
                 <div className="casaroleCardHolderLessThanFive">
                     {sectionData.map((item) => (
@@ -126,16 +126,19 @@ function CasaroleSection({ sectionName }) {
                                 <h2>{item.gid}</h2>
                                 <p>{item.description}</p>
                                 <div className="casaroleLinks">
-                                    {item.links.map((link) => (
-                                        <a
-                                            key={link.text}
-                                            href={link.url}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            {link.text}
-                                        </a>
-                                    ))}
+                                    <ul>
+                                        {item.links.map((link) => (
+                                            <li key={link.text}>
+                                                <a
+                                                    href={link.link}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    {link.text}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +146,7 @@ function CasaroleSection({ sectionName }) {
                 </div>
             );
         }
-        
+
         else {
             return (
                 <div className="casaroleCardHolder">
@@ -166,16 +169,19 @@ function CasaroleSection({ sectionName }) {
                                     <h2>{item.gid}</h2>
                                     <p>{item.description}</p>
                                     <div className="casaroleLinks">
-                                        {item.links?.map((link, linkIndex) => (
+                                        <ul>
+                                        {item.links.map((link, linkIndex) => (
+                                            <li key={linkIndex}>
                                             <a
-                                                key={linkIndex}
-                                                href={link.url}
+                                                href={link.link}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
                                                 {link.text}
                                             </a>
+                                            </li>
                                         ))}
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

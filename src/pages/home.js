@@ -1,30 +1,44 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import Header from '../components/header';
+import headerImg from '../imgs/background1.jpg';
 import '../styles/home.css';
 
 function Home() {
+    const [divClass, setDivClass] = useState('opacity');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) setDivClass('opacity scrolled');
+            else setDivClass('opacity');
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div id="home">
+
             {/* Header Section */}
-            <header className="header">
-                <h1 className="title">
-                    Heart of KY<br />
-                    Kids
-                </h1>
-            </header>
+            <Header
+                imgURL={headerImg}
+                title={
+                    <>Heart of KY<br />Kids
+                    </>
+                }
+            />
 
             {/* Main Content */}
             <main>
                 <section id="inspiration">
                     <div className='container'>
                         <div className='quote'>
-                            <quote>
-                                <p>
-                                    "Every child can have a strong start when families,
-                                </p>
-                                <p>
-                                    communities, and schools work together."
-                                </p>
-                            </quote>
+                            <p>
+                                "Every child can have a strong start when families,
+                            </p>
+                            <p>
+                                communities, and schools work together."
+                            </p>
                         </div>
                     </div>
                 </section>

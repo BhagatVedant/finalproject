@@ -44,14 +44,15 @@ section {
 }
 
 h2 {
-    background-color: black;
+    
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    color: #f9f9f9;
+    color: black;
+    font-weight: 400;
 }
 
 #inspiration {
@@ -73,19 +74,19 @@ h2 {
 
 #mission {
     background-color: #f9f9f9;
-    border-bottom: black 4px solid;
+    
 }
 
 #members {
     margin-top: 10vh;
     background-color: #f9f9f9;
-    border-bottom: black 4px solid;
+    
 }
 
 #funding {
     margin-top: 10vh;
     background-color: #f9f9f9;
-    border-bottom: black 4px solid;
+    
 }
 
 footer {
@@ -106,4 +107,56 @@ footer a:link, footer a:visited {
 footer img {
     width: 2rem;
     height: 2rem;
+}
+
+
+
+
+#mission{
+    border-top: #1c1c1c 10px solid;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#mission .flex-container{
+    flex: 1 0 50%;
+    flex-basis: 50%;
+    align-self: flex-start;
+    align-content: flex-start;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+#mission .flex-container h2{
+    text-align: left;
+}
+
+#mission .container{
+    flex: 0 0 50%;
+    text-align: left;
+    margin-right:0;
+    margin-top: .5em;
+    
+    
+    
+
+}
+
+#mission .container p{
+    margin-top: 0;
+    padding-right: 0.5rem;
+
+}
+
+#Space1{
+    height:9px;
+    max-width: 80vw;
+    display: flex;
+    background-color:#1c1c1c;;
+
 }

@@ -31,7 +31,7 @@ function Home() {
 
                 <section id="mission">
                     <div className='flex-container'>
-                    <h2>Mission</h2>
+                    <h2>Our Mission</h2>
                     </div>
 
                     <div className='container'>
@@ -48,7 +48,7 @@ function Home() {
                 </section>
 
                 <section id="members">
-                    <h2>Members</h2>
+                    <h2>Members and Partners</h2>
 
                     <div className='container'>
                         <p>

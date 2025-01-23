@@ -1,0 +1,100 @@
+.casaroleSection {
+    background-color: #f9f9f9;
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    border-top: #1c1c1c 10px solid;
+    margin-bottom: 10vh;
+}
+
+.casaroleCardHolder {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.casaroleCardHolderLessThanFive {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.casaroleCardHolderLessThanFive .casaroleCard {
+    box-sizing: border-box;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    border-top: #1c1c1c 10px solid;
+    text-align: center;
+}
+
+.casaroleWrapper {
+    display: flex;
+    margin: 0 -12.5%;
+}
+
+.casaroleCard {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    border-top: #1c1c1c 10px solid;
+    text-align: center;
+}
+
+.casaroleNavButton {
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.casaroleNavButton.left {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 2.5rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.casaroleNavButton.left:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.casaroleNavButton.right {
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.65);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.casaroleNavButton.right:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: background-color 0.3s ease;
+}

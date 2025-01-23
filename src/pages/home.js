@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import '../styles/home.css';
+import CasaroleSection from '../components/casaroleSection';
 
 function Home() {
     const [divClass, setDivClass] = useState('opacity');

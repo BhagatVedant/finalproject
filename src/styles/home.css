@@ -37,7 +37,7 @@ h2 {
 }
 
 #inspiration {
-    background: url('../../public/imgs/inspoBG.jpg') no-repeat center center fixed;
+    background: url('../imgs/inspoBG.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 50vh;
     display: flex;

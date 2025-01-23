@@ -1,0 +1,203 @@
+import React, { useState, useEffect, useRef } from "react";
+import "./styles/casaroleSection.css";
+
+function CasaroleSection({ sectionName }) {
+    //Storing Requested Section Data
+    const [sectionData, setSectionData] = useState([]);
+
+    //Storing the current index of the data array
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    //Storing the transition state
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    //Reference to the wrapper div
+    //Used to control the transition property
+    //and to force a reflow
+    const wrapperRef = useRef(null);
+
+    //Fetch the data for the requested section
+    useEffect(() => {
+        fetch("./kyKids.json")
+            .then((response) => response.json())
+            .then((data) => {
+                const secData = data.filter((item) => item.sectionId === sectionName);
+                setSectionData(secData);
+            })
+            .catch((error) => console.error("Error loading JSON:", error));
+    }, [sectionName]);
+
+    //Create an infinite data array to loop through
+    const infiniteData = React.useMemo(() => {
+        if (sectionData.length === 0) return [];
+        return [...sectionData, ...sectionData, ...sectionData];
+    }, [sectionData]);
+
+    //Storing the original length of the data array
+    const dataLength = sectionData.length;
+
+    //Set the current index to the middle chunk of the data array
+    useEffect(() => {
+        if (dataLength > 0) {
+            setCurrentIndex(dataLength);
+        }
+    }, [dataLength]);
+
+    //Handle the previous button click
+    function handlePrev() {
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+        setCurrentIndex((prev) => prev - 1);
+    }
+
+    //Handle the next button click
+    function handleNext() {
+        if (isTransitioning) return;
+        setIsTransitioning(true);
+        setCurrentIndex((prev) => prev + 1);
+    }
+
+    //Handle the transition end
+    function handleTransitionEnd() {
+        //Turn off the transition state
+        setIsTransitioning(false);
+
+        /*-----------------------------------
+            Creating Infinte loop effect
+        -----------------------------------*/
+
+        //If we've reached the end of the data array, we instantly jump back to the middle chunk
+        if (currentIndex >= 2 * dataLength) {
+            //Turn off the transition, jump back to the middle chunk, then re-enable the transition
+            wrapperRef.current.style.transition = "none";
+            setCurrentIndex((prev) => prev - dataLength);
+
+            requestAnimationFrame(() => {
+                wrapperRef.current.style.transition = "transform 0.5s ease";
+            });
+        }
+
+        //If we've reached the beginning of the data array, we instantly jump to the middle chunk
+        else if (currentIndex < dataLength) {
+            //Turn off the transition, jump forward by dataLength, then re-enable the transition
+            wrapperRef.current.style.transition = "none";
+            setCurrentIndex((prev) => prev + dataLength);
+
+            requestAnimationFrame(() => {
+                wrapperRef.current.style.transition = "transform 0.5s ease";
+            });
+        }
+    }
+
+    //Whenever isTransitioning changes, update the transition property of the wrapper div
+    //Forces a reflow to apply the changes
+    useEffect(() => {
+        if (!wrapperRef.current) return;
+        wrapperRef.current.style.transition = isTransitioning
+            ? "transform 0.5s ease"
+            : "none";
+    }, [isTransitioning]);
+
+    //If the section data is empty, display a message
+    if (sectionData.length === 0) {
+        return (
+            <div className="casaroleSection">
+                <p>Coming Soon...</p>
+            </div>
+        );
+    }
+
+    function renderCards() {
+        if (sectionData.length <= 4) {
+            const basisValue = 100 / sectionData.length;
+        
+            return (
+                <div className="casaroleCardHolderLessThanFive">
+                    {sectionData.map((item) => (
+                        <div
+                            key={item.id}
+                            className="casaroleCard"
+                            style={{
+                                flex: `0 0 ${basisValue}%`,
+                            }}
+                        >
+                            <img src={item.logo} alt={item.title} />
+                            <div className="casaroleText">
+                                <h2>{item.gid}</h2>
+                                <p>{item.description}</p>
+                                <div className="casaroleLinks">
+                                    {item.links.map((link) => (
+                                        <a
+                                            key={link.text}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {link.text}
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            );
+        }
+        
+        else {
+            return (
+                <div className="casaroleCardHolder">
+                    <button className="casaroleNavButton left" onClick={handlePrev}>
+                        &#x2039;
+                    </button>
+
+                    <div
+                        className="casaroleWrapper"
+                        ref={wrapperRef}
+                        style={{
+                            transform: `translateX(-${currentIndex * 25}%)`,
+                        }}
+                        onTransitionEnd={handleTransitionEnd}
+                    >
+                        {infiniteData.map((item, index) => (
+                            <div key={index} className="casaroleCard">
+                                <img src={item.logo} alt={item.title} />
+                                <div className="casaroleText">
+                                    <h2>{item.gid}</h2>
+                                    <p>{item.description}</p>
+                                    <div className="casaroleLinks">
+                                        {item.links?.map((link, linkIndex) => (
+                                            <a
+                                                key={linkIndex}
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                {link.text}
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <button className="casaroleNavButton right" onClick={handleNext}>
+                        &#x203A;
+                    </button>
+                </div>
+            );
+        }
+    }
+
+    //Render the component when the section data is loaded
+    return (
+        <div className="casaroleSection">
+            <h1>{sectionData[0].sectionTitle}</h1>
+
+            {renderCards()}
+        </div>
+    );
+}
+
+export default CasaroleSection;

@@ -53,23 +53,6 @@ h2 {
     font-size: 2.5rem;
 }
 
-#mission {
-    background-color: #f9f9f9;
-    
-}
-
-#members {
-    margin-top: 10vh;
-    background-color: #f9f9f9;
-    
-}
-
-#funding {
-    margin-top: 10vh;
-    background-color: #f9f9f9;
-    
-}
-
 footer {
     background-color: #1c1c1c;
     color: #f9f9f9;
@@ -90,6 +73,17 @@ footer img {
     height: 2rem;
 }
 
+#body-container > *{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#body-container #members{
+
+}
+
+/*Section*/
 #mission{
     border-top: #1c1c1c 10px solid;
     max-width: 80vw;
@@ -98,6 +92,8 @@ footer img {
     flex-direction: row;
     margin: 0 auto;
     text-align: left;
+    background-color: #f9f9f9;
+    flex-basis: 33%;
 }
 
 #mission .flex-container{
@@ -106,8 +102,7 @@ footer img {
     align-self: flex-start;
     align-content: flex-start;
     display: inline-block;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 #mission .flex-container h2{
@@ -126,9 +121,61 @@ footer img {
     padding-right: 0.5rem;
 }
 
-#Space1{
-    height:9px;
+/*Section*/
+#members {
+    border-top: #1c1c1c 1px solid;
     max-width: 80vw;
     display: flex;
-    background-color:#1c1c1c;;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: left;    
+    background-color: #f9f9f9;
+}
+
+#members .container{
+    flex: 0 0 50%;
+    text-align: left;
+    margin-right:0;
+    margin-top: .5em;
+}
+
+#members .container p{
+    margin-top: 0;
+    padding-right: 0.5rem;
+
+}
+
+#members .flex-container h2{
+    text-align: left;
+}
+
+
+/*Section*/
+#funding  {
+    border-top: #1c1c1c 1px solid;
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #f9f9f9;
+    flex-basis: 100%;
+}
+
+#funding  .container{
+    flex: 0 0 50%;
+    text-align: left;
+    margin-right:0;
+    margin-top: .5em;
+}
+
+#funding  .container p{
+    margin-top: 0;
+    padding-right: 0.5rem;
+}
+
+#funding  .flex-container h2{
+    text-align: left;
 }

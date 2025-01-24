@@ -151,7 +151,9 @@ function CasaroleSection({ sectionName }) {
             return (
                 <div className="casaroleCardHolder">
                     <button className="casaroleNavButton left" onClick={handlePrev}>
-                        &#x2039;
+                        <p>
+                            &#x2039;
+                        </p>
                     </button>
 
                     <div
@@ -170,17 +172,17 @@ function CasaroleSection({ sectionName }) {
                                     <p>{item.description}</p>
                                     <div className="casaroleLinks">
                                         <ul>
-                                        {item.links.map((link, linkIndex) => (
-                                            <li key={linkIndex}>
-                                            <a
-                                                href={link.link}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                {link.text}
-                                            </a>
-                                            </li>
-                                        ))}
+                                            {item.links.map((link, linkIndex) => (
+                                                <li key={linkIndex}>
+                                                    <a
+                                                        href={link.link}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        {link.text}
+                                                    </a>
+                                                </li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>
@@ -189,7 +191,9 @@ function CasaroleSection({ sectionName }) {
                     </div>
 
                     <button className="casaroleNavButton right" onClick={handleNext}>
-                        &#x203A;
+                        <p>
+                            &#x203A;
+                        </p>
                     </button>
                 </div>
             );

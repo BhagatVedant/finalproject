@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
-import '../styles/support.css';
 import CasaroleSection from '../components/casaroleSection';
+import InspoText from '../components/inspoText';
+import '../styles/support.css';
 
 function Support() {
-    const [sectionData, setSectionData] = useState(["newParents", "therapy", "caregivers"]);
+    const pageData = ["newParents", "therapy", "caregivers"];
 
     return (
         <div id="support">
@@ -18,7 +19,20 @@ function Support() {
                 }
             />
             <main>
-                {sectionData.map((sectionName) => (
+                <InspoText
+                    text={
+                        <>
+                            <p>
+                                "Every child can have a strong start when families,
+                            </p>
+                            <p>
+                                communities, and schools work together."
+                            </p>
+                        </>
+                    }
+                />
+
+                {pageData.map((sectionName) => (
                     <CasaroleSection sectionName={sectionName} />
                 ))}
             </main>

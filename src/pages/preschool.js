@@ -1,12 +1,44 @@
 import React from 'react';
+import Header from '../components/header';
+import headerImg from '../imgs/background1.jpg';
+import CasaroleSection from '../components/casaroleSection';
+import InspoText from '../components/inspoText';
 
-const Preschool = () => {
+function Preschool() {
+    const pageData = ["HeadStartSection", "PublicPreschool", "PrivatePreschool"];
+
     return (
-        <div>
-            <h1>Welcome to the Preschool Page</h1>
-            <p>This is a placeholder for the preschool page content.</p>
+        <div className='preschool'>
+            <Header
+                imgURL={headerImg}
+                title={
+                    <>
+                        Preschool
+                    </>
+                }
+            />
+
+            <main>
+                <InspoText
+                    text={
+                        <>
+                            <p>
+                                "Every child can have a strong start when families,
+                            </p>
+                            <p>
+                                communities, and schools work together."
+                            </p>
+                        </>
+                    }
+                />
+
+                {pageData.map((sectionName) => (
+                    <CasaroleSection sectionName={sectionName} />
+                ))}
+            </main>
         </div>
+
     );
-};
+}
 
 export default Preschool;

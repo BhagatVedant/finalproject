@@ -3,7 +3,7 @@
     max-width: 80vw;
     margin: 0 auto;
     text-align: center;
-    border-top: #1c1c1c 10px solid;
+    
     margin-bottom: 10vh;
 }
 
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #f9f9f9;
-    border-top: #1c1c1c 10px solid;
+    
     text-align: center;
 }
 
@@ -52,7 +52,7 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #f9f9f9;
-    border-top: #1c1c1c 10px solid;
+    
     text-align: center;
 }
 
@@ -69,8 +69,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    box-shadow: none;
 }
 
 .casaroleNavButton.left {
@@ -94,6 +93,7 @@
 }
 
 .casaroleNavButton.right {
+    top: 0;
     right: 0;
     z-index: 1;
     height: 100%;
@@ -109,6 +109,14 @@
 .casaroleNavButton.right:hover {
     background-color: rgba(0, 0, 0, 0.85);
     transition: background-color 0.3s ease;
+}
+
+button:active {
+    transform: scale(1);
+}
+
+button:active p {
+    transform: scale(0.9);
 }
 
 .casaroleText {

@@ -1,21 +1,11 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
+import InspoText from '../components/inspoText';
 import '../styles/home.css';
-import CasaroleSection from '../components/casaroleSection';
 
 function Home() {
-    const [divClass, setDivClass] = useState('opacity');
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 0) setDivClass('opacity scrolled');
-            else setDivClass('opacity');
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    const pageData = ["mission", "members", "funding"];
 
     return (
         <div id="home">
@@ -31,25 +21,24 @@ function Home() {
 
             {/* Main Content */}
             <main>
-                
-                <section id="inspiration">
-                    <div className='container'>
-                        <div className='quote'>
+                <InspoText
+                    text={
+                        <>
                             <p>
                                 "Every child can have a strong start when families,
                             </p>
                             <p>
                                 communities, and schools work together."
                             </p>
-                        </div>
-                    </div>
-                </section>
+                        </>
+                    }
+                />
 
                 <div id="body-container">
 
                     <section id="mission">
                         <div className='flex-container'>
-                        <h2>Our Mission</h2>
+                            <h2>Our Mission</h2>
                         </div>
 
                         <div className='container'>
@@ -67,7 +56,7 @@ function Home() {
 
                     <section id="members">
                         <div className='flex-container'>
-                        <h2>Members</h2>
+                            <h2>Members</h2>
                         </div>
 
                         <div className='container'>
@@ -88,8 +77,8 @@ function Home() {
                     </section>
 
                     <section id="funding">
-                        <div className='flex-container'>    
-                        <h2>Funding and Donations</h2>
+                        <div className='flex-container'>
+                            <h2>Funding and Donations</h2>
                         </div>
 
                         <div className='container'>

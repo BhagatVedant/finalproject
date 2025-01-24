@@ -36,23 +36,6 @@ h2 {
     font-weight: 400;
 }
 
-#inspiration {
-    background: url('../imgs/inspoBG.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
-}
-
-.quote {
-    font-family: 'Raleway', sans-serif;
-    color: #f9f9f9;
-    text-align: center;
-    font-size: 2.5rem;
-}
-
 footer {
     background-color: #1c1c1c;
     color: #f9f9f9;
@@ -85,7 +68,6 @@ footer img {
 
 /*Section*/
 #mission{
-    border-top: #1c1c1c 10px solid;
     max-width: 80vw;
     display: flex;
     justify-content: space-between;
@@ -179,3 +161,4 @@ footer img {
 #funding  .flex-container h2{
     text-align: left;
 }
+

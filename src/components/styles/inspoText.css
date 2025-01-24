@@ -1,0 +1,16 @@
+#inspiration {
+    background: url('../../imgs/inspoBG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+}
+
+#inspiration .quote {
+    font-family: 'Raleway', sans-serif;
+    color: #f9f9f9;
+    text-align: center;
+    font-size: 2.5rem;
+}

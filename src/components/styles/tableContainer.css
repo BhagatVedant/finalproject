@@ -1,0 +1,122 @@
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0.75em 0;
+    padding-bottom: 0.5em;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+hr {
+    border: 1px solid #000;
+    width: 80%;
+}
+
+.button {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.5em 1.5em;
+    box-shadow: 5px 5px 0px 0px black;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0px black;
+    transform: translate(5px, 5px);
+}
+
+.noDataMessage {
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 6vh;
+    text-transform: capitalize;
+    border: black 2.5px dashed;
+    opacity: 0.5;
+}
+
+.noDataMessage b {
+    font-size: 7vh;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .noDataMessage {
+        font-size: 5vh;
+        height: 55vh;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .noDataMessage {
+        font-size: 4vh;
+        height: 55vh;
+    }
+
+}

@@ -1,0 +1,15 @@
+#childcare {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80vw;
+}

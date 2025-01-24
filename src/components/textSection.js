@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/textSection.css';
 
 function TextSection({ sectionId }) {
-    const [sectionData, setSectionData] = useState([]);
+    const [sectionData, setSectionData] = useState(null);
 
 
 
@@ -10,24 +10,28 @@ function TextSection({ sectionId }) {
         fetch("./kyKids.json")
         .then((responese) => responese.json())
         .then((data) => {
-            const tempData = data.filter((data)=> data.sectionId === sectionId);
+            const tempData = data.find((data)=> data.sectionId === sectionId);
             setSectionData(tempData)
         })
         .catch((error) => console.error("Error loading JSON:", error));
 
-    })
+    }, [sectionId])
 
 
+    if(!sectionData){
+        return <p>Loading....</p>
+    }
 
 
     return (  
-            <section id={header}>
+            <section id={sectionData.sectionId}>
                 <div className='flex-container'>
-                    <h2>{header}</h2>
+                    <h2>{sectionData.sectionTitle}</h2>
                 </div>
 
-                <div className='container'>
-                    {text}
+                <div className='container'> {sectionData.description.map((content, index) =>
+                    <p key={index}>{content}</p>
+                )}    
                 </div>
             </section>
     );

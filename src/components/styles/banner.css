@@ -1,32 +1,32 @@
-#inspirationSection {
+#bannerSection {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
-#inspiration {
+#banner {
     background: url('../../imgs/inspoBG.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 50vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.17);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
 }
 
-#inspiration .quote {
+#banner .quote {
     font-family: 'Raleway', sans-serif;
     color: #f9f9f9;
     text-align: center;
     font-size: 2.5rem;
 }
 
-.blackLine {
-    width: 80vw;
+#banner .blackLine {
+    width: 80vh;
     height: 10px;
     background-color: #1c1c1c;
 }

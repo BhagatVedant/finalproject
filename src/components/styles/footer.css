@@ -1,0 +1,64 @@
+footer {
+    text-align: center;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.follow {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../../imgs/inspoBG.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.followText h3 {
+    margin: 0;
+    margin-left: 2vh;
+    color: #f9f9f9;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    margin-right: 2vh;
+}
+
+.social a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a:link, .social a:visited {
+    background-color: transparent;
+}
+
+.social img {
+    width: 44px;
+    height: 44px;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.blackLine {
+    width: 80vw;
+    height: 10px;
+    background-color: #1c1c1c;
+}

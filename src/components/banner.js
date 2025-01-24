@@ -1,20 +1,18 @@
 import React from "react";
-import './styles/inspoText.css';
+import './styles/banner.css';
 
-function InspoText({ text }) {
+function Banner({ text }) {
     return (
-        <section id="inspirationSection">
-            <div id="inspiration">
+        <section id="bannerSection">
+            <div id="banner">
                 <div className='container'>
                     <div className='quote'>
                         {text}
                     </div>
                 </div>
             </div>
-            
-            <div className="blackLine"></div>
         </section>
     );
 }
 
-export default InspoText;
+export default Banner;

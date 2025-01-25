@@ -3,6 +3,8 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import CasaroleSection from '../components/casaroleSection';
 import InspoText from '../components/inspoText';
+import Footer from '../components/footer';
+import '../styles/preschool.css';
 
 function Preschool() {
     const pageData = ["HeadStartSection", "PublicPreschool", "PrivatePreschool"];
@@ -36,8 +38,9 @@ function Preschool() {
                     <CasaroleSection sectionName={sectionName} />
                 ))}
             </main>
-        </div>
 
+            <Footer />
+        </div>
     );
 }
 

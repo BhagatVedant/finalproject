@@ -3,6 +3,8 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import CasaroleSection from '../components/casaroleSection';
 import InspoText from '../components/inspoText';
+import SingleItemSection from '../components/singleItemSection';
+import Footer from '../components/footer';
 import '../styles/support.css';
 
 function Support() {
@@ -32,10 +34,14 @@ function Support() {
                     }
                 />
 
-                {pageData.map((sectionName) => (
+                {pageData.slice(0,2).map((sectionName) => (
                     <CasaroleSection sectionName={sectionName} />
                 ))}
+
+                <SingleItemSection sectionId={pageData[2]} />
             </main>
+
+            <Footer />
         </div>
     );
 }

@@ -3,6 +3,7 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import TableContainer from '../components/tableContainer';
 import InspoText from '../components/inspoText';
+import Footer from '../components/footer';
 import '../styles/childcare.css';
 
 function Childcare() {
@@ -36,6 +37,8 @@ function Childcare() {
                     <TableContainer />
                 </div>
             </main>
+
+            <Footer />
         </div>
     );
 }

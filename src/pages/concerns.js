@@ -2,9 +2,12 @@ import React from 'react';
 import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import InspoText from '../components/inspoText';
+import TextSection from '../components/textSection';
+import Footer from '../components/footer';
+import '../styles/concerns.css';
 
 function Concerns() {
-    const pageData = ["whatToDO", "AddressConcerns"];
+    const pageData = ["whatToDo", "AddressConcerns"];
 
     return (
         <div id="concerns">
@@ -29,7 +32,10 @@ function Concerns() {
                         </>
                     }
                 />
+
+                <TextSection sectionId={pageData[0]} />
             </main>
+            <Footer />
         </div>
     );
 };

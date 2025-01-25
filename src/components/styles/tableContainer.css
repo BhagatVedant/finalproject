@@ -15,7 +15,7 @@
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    color: #000;
+    color: #1c1c1c;
     text-align: center;
     margin: 0;
     padding: 0.75em 0;
@@ -26,7 +26,7 @@ h1 {
 }
 
 hr {
-    border: 1px solid #000;
+    border: 1px solid #1c1c1c;
     width: 80%;
 }
 
@@ -45,17 +45,17 @@ button {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: #1c1c1c;
     cursor: pointer;
     border: 3px solid;
     padding: 0.5em 1.5em;
-    box-shadow: 5px 5px 0px 0px black;
+    box-shadow: 5px 5px 0px 0px #1c1c1c;
     position: relative;
     transition: all 0.2s ease-in-out;
 }
 
 button:active {
-    box-shadow: 0px 0px 0px 0px black;
+    box-shadow: 0px 0px 0px 0px #1c1c1c;
     transform: translate(5px, 5px);
 }
 
@@ -66,12 +66,12 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #1c1c1c;
     text-align: center;
     margin-top: 2rem;
     font-size: 6vh;
     text-transform: capitalize;
-    border: black 2.5px dashed;
+    border: #1c1c1c 2.5px dashed;
     opacity: 0.5;
 }
 

@@ -127,7 +127,7 @@ function CasaroleSection({ sectionName }) {
                                 <p>{item.description}</p>
                                 <div className="casaroleLinks">
                                     <ul>
-                                        {item.links.map((link) => (
+                                        {item.links?.map((link) => (
                                             <li key={link.text}>
                                                 <a
                                                     href={link.link}
@@ -172,7 +172,7 @@ function CasaroleSection({ sectionName }) {
                                     <p>{item.description}</p>
                                     <div className="casaroleLinks">
                                         <ul>
-                                            {item.links.map((link, linkIndex) => (
+                                            {item.links?.map((link, linkIndex) => (
                                                 <li key={linkIndex}>
                                                     <a
                                                         href={link.link}

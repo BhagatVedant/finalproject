@@ -25,7 +25,7 @@ function TextSection({ sectionId, imgURL, imgAlt }) {
 
 
     return (  
-            <section id={sectionData.sectionId}>
+            <section id={"container"}>
                 <div className='title'>
                     <h2>{sectionData.sectionTitle}</h2>
                 </div>

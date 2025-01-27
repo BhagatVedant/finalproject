@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles/textSection.css';
 
-function TextSection({ sectionId }) {
+function TextSection({ sectionId, imgURL, imgAlt }) {
     const [sectionData, setSectionData] = useState(null);
 
     console.log(sectionId)
@@ -26,13 +26,17 @@ function TextSection({ sectionId }) {
 
     return (  
             <section id={sectionData.sectionId}>
-                <div className='flex-container'>
+                <div className='title'>
                     <h2>{sectionData.sectionTitle}</h2>
                 </div>
 
-                <div className='container'> {sectionData.description.map((content, index) =>
+                <div className='text'> {sectionData.description.map((content, index) =>
                     <p key={index}>{content}</p>
                 )}    
+                </div>
+
+                <div className='image'>
+                    <img src={imgURL} alt={imgAlt}></img>
                 </div>
             </section>
     );

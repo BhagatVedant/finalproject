@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navBar';
+import ScrollFix from './components/scrollFix';
 import Home from './pages/home';
 import Childcare from './pages/childcare';
 import Activities from './pages/activities';
@@ -9,11 +10,14 @@ import Preschool from './pages/preschool';
 import Concerns from './pages/concerns';
 import './App.css';
 
+
 function App() {
     return (
         <div className="App">
             <NavBar />
             
+            <ScrollFix />
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/childcare" element={<Childcare />} />

@@ -1,7 +1,7 @@
 .single-item-section {
     padding: 20px;
     margin: 20px 0;
-    width: 80vw;
+    width: 84vw;
 }
 
 .single-item-content {
@@ -28,12 +28,15 @@
     text-align: center;
 }
 
+.single-item-text h2 {
+    font-size: 2rem;;
+}
+
 .single-item-text p {
     font-size: 1em;
-    color: #666;
     line-height: 1.5;
     text-align: center;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 90%;
 }
@@ -72,8 +75,8 @@
 
 .single-item-links ul li:hover {
     background: radial-gradient(circle at center,
-            rgba(0, 0, 0, 0.25) 40%,
-            rgba(0, 0, 0, 0.4) 100%),
+            rgba(0, 0, 0, 0.3) 40%,
+            rgba(0, 0, 0, 0.45) 100%),
         url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
 }
 

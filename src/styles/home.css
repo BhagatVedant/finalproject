@@ -27,7 +27,7 @@ section {
 }
 
 .container {
-    width: 80vw;
+    width: 84vw;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ h2 {
 
 /*Section*/
 #mission{
-    max-width: 80vw;
+    max-width: 84vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -99,7 +99,7 @@ h2 {
 /*Section*/
 #members {
     border-top: #1c1c1c 1px solid;
-    max-width: 80vw;
+    max-width: 84vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -129,7 +129,7 @@ h2 {
 /*Section*/
 #funding  {
     border-top: #1c1c1c 1px solid;
-    max-width: 80vw;
+    max-width: 84vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;

@@ -1,26 +1,38 @@
-.single-item-section {
+.column-section {
     padding: 20px;
     margin: 20px 0;
     width: 80vw;
 }
 
-.single-item-content {
+.columnItem {
     display: flex;
     align-items: center;
     width: 100%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    transition: transform 0.3s;
 }
 
-.single-item-content > * {
+.columnItem:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.columnItem > * {
     flex-basis: 50%;
 }
 
-.single-item-content img {
-    height: 65vh;
-    width: 100%;
+.columnItem img {
+    width: 1px;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid #f9f9f9;
 }
 
-.single-item-text {
+.columnText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +40,7 @@
     text-align: center;
 }
 
-.single-item-text p {
+.columnText p {
     font-size: 1em;
     color: #666;
     line-height: 1.5;
@@ -38,14 +50,14 @@
     width: 90%;
 }
 
-.single-item-links {
+.columnLinks {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
 }
 
-.single-item-links ul {
+.columnLinks ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,21 +68,20 @@
     gap: 1rem;
 }
 
-.single-item-links ul li {
+.columnLinks ul li {
     list-style: none;
-    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
     background:
         radial-gradient(circle at center,
             rgba(0, 0, 0, 0.2) 40%,
             rgba(0, 0, 0, 0.35) 100%),
         url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
     padding: 0.5rem 2%;
-    padding: 0.5rem 2%;
     width: 96%;
     border-radius: 10px;
 }
 
-.single-item-links ul li a {
+.columnLinks ul li a {
     text-decoration: none;
     color: #f9f9f9;
     font-size: 0.9rem;

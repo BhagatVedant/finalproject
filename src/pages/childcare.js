@@ -3,6 +3,7 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import TableContainer from '../components/tableContainer';
 import InspoText from '../components/inspoText';
+import ColumnSection from '../components/columnSection';
 import Footer from '../components/footer';
 import '../styles/childcare.css';
 
@@ -32,6 +33,8 @@ function Childcare() {
                         </>
                     }
                 />
+
+                <ColumnSection sectionName={pageData[0]} />
 
                 <div className='cointainer'>
                     <TableContainer />

@@ -1,12 +1,13 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./styles/singleItemSection.css";
 
 function SingleItemSection({ sectionId }) {
     //Storing Requested Section Data
-    const [sectionData, setSectionData] = React.useState({});
+    const [sectionData, setSectionData] = useState({});
 
     //Fetch the data for the requested section
-    React.useEffect(() => {
+    useEffect(() => {
         fetch("./kyKids.json")
             .then((response) => response.json())
             .then((data) => {
@@ -25,7 +26,7 @@ function SingleItemSection({ sectionId }) {
                 <img src={sectionData.logo} alt={sectionData.title} />
 
                 <div className="single-item-text">
-                    <h2>{sectionData.gid}</h2>
+                    <h2>{sectionData.title}</h2>
                     <p>{sectionData.description}</p>
                     <div className="single-item-links">
                         <ul>

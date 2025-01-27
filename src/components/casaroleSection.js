@@ -123,7 +123,7 @@ function CasaroleSection({ sectionName }) {
                         >
                             <img src={item.logo} alt={item.title} />
                             <div className="casaroleText">
-                                <h2>{item.gid}</h2>
+                                <h2>{item.title}</h2>
                                 <p>{item.description}</p>
                                 <div className="casaroleLinks">
                                     <ul>
@@ -168,7 +168,7 @@ function CasaroleSection({ sectionName }) {
                             <div key={index} className="casaroleCard">
                                 <img src={item.logo} alt={item.title} />
                                 <div className="casaroleText">
-                                    <h2>{item.gid}</h2>
+                                    <h2>{item.title}</h2>
                                     <p>{item.description}</p>
                                     <div className="casaroleLinks">
                                         <ul>

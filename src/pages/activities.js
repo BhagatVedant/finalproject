@@ -4,6 +4,7 @@ import headerImg from '../imgs/background1.jpg';
 import CasaroleSection from '../components/casaroleSection';
 import InspoText from '../components/inspoText';
 import SingleItemSection from '../components/singleItemSection';
+import VideoSection from '../components/videoSection';
 import Footer from '../components/footer';
 import '../styles/activities.css';
 
@@ -34,6 +35,8 @@ function Activities() {
                     }
                 />
 
+                <VideoSection sectionName={pageData[0]} />
+                
                 <SingleItemSection sectionId={pageData[1]} />
 
                 {pageData.slice(2,4).map((sectionName) => (

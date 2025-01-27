@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import "./styles/casaroleSection.css";
 
 function CasaroleSection({ sectionName }) {
@@ -28,7 +28,7 @@ function CasaroleSection({ sectionName }) {
     }, [sectionName]);
 
     //Create an infinite data array to loop through
-    const infiniteData = React.useMemo(() => {
+    const infiniteData = useMemo(() => {
         if (sectionData.length === 0) return [];
         return [...sectionData, ...sectionData, ...sectionData];
     }, [sectionData]);

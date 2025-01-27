@@ -9,6 +9,7 @@
 .casaroleCardHolder {
     position: relative;
     width: 100%;
+    max-width: 80vw;
     overflow: hidden;
     margin: 1rem auto;
 }
@@ -17,18 +18,71 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 80vw;
 }
 
 .casaroleCardHolderLessThanFive .casaroleCard {
     box-sizing: border-box;
+    margin: 0 1rem;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     background-color: #f9f9f9;
-    
     text-align: center;
+}
+
+.casaroleCardHolderLessThanFive .casaroleCard img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.casaroleCardHolderLessThanFive .casaroleText {
+    width: 90%;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.casaroleCardHolderLessThanFive .casaroleLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.casaroleCardHolderLessThanFive .casaroleLinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.casaroleCardHolderLessThanFive .casaroleLinks ul li {
+    list-style: none;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.35) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+    padding: 0.5rem 2%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.casaroleCardHolderLessThanFive .casaroleLinks ul li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 .casaroleWrapper {
@@ -51,7 +105,6 @@
     justify-content: flex-start;
     align-items: center;
     background-color: #f9f9f9;
-    
     text-align: center;
 }
 
@@ -77,7 +130,7 @@
     z-index: 1;
     width: 2.5rem;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.35);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -88,7 +141,7 @@
 }
 
 .casaroleNavButton.left:hover {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .casaroleNavButton.right {
@@ -97,7 +150,7 @@
     z-index: 1;
     height: 100%;
     width: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.35);
     transition: background-color 0.3s ease;
     display: flex;
     justify-content: center;
@@ -106,7 +159,7 @@
 }
 
 .casaroleNavButton.right:hover {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.65);
     transition: background-color 0.3s ease;
 }
 
@@ -143,13 +196,21 @@ button:active p {
 
 .casaroleLinks ul li {
     list-style: none;
-    background-color: #1c1c1c;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.35) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+    padding: 0.5rem 2%;
     padding: 0.5rem 2%;
     width: 96%;
     border-radius: 10px;
 }
 
 .casaroleLinks ul li a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #f9f9f9;
     font-size: 0.9rem;

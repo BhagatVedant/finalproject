@@ -6,17 +6,30 @@
     font-family: 'pt sans', sans-serif;
 }
 
-main {
+#container .title h2{
+    text-align: center;
+}
+
+#home main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f9f9f9;
 }
+#home footer .blackLine{
+    background-color: #1c1c1c;
+    width: 100vw;
+}
+
+#home footer{
+    background:  #f9f9f9;
+}
 
 #home .blackLine {
     width: 80vw;
     background-color: #1c1c1c;
+
 }
 
 section {
@@ -32,7 +45,7 @@ section {
 h2 {
     
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -41,105 +54,34 @@ h2 {
     font-weight: 400;
 }
 
+
+
+#body-container{
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 8px;
+    
+}
+
 #body-container > *{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: transparent;
 }
 
-/*Section*/
-#mission{
-    max-width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #f9f9f9;
-    flex-basis: 33%;
-}
 
-#mission .flex-container{
-    flex: 1 0 50%;
-    flex-basis: 50%;
-    align-self: flex-start;
-    align-content: flex-start;
+
+main section:nth-of-type(3){
     display: inline-block;
-    width: 100%; 
-}
-
-#mission .flex-container h2{
-    text-align: left;
-}
-
-#mission .container{
-    flex: 0 0 50%;
-    text-align: left;
-    margin-right:0;
-    margin-top: .5em;
-}
-
-#mission .container p{
-    margin-top: 0;
-    padding-right: 0.5rem;
-}
-
-/*Section*/
-#members {
-    border-top: #1c1c1c 1px solid;
-    max-width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0 auto;
-    text-align: left;    
-    background-color: #f9f9f9;
-}
-
-#members .container{
-    flex: 0 0 50%;
-    text-align: left;
-    margin-right:0;
-    margin-top: .5em;
-}
-
-#members .container p{
-    margin-top: 0;
-    padding-right: 0.5rem;
-
-}
-
-#members .flex-container h2{
-    text-align: left;
-}
-
-
-/*Section*/
-#funding  {
-    border-top: #1c1c1c 1px solid;
-    max-width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #f9f9f9;
-    flex-basis: 100%;
-}
-
-#funding  .container{
-    flex: 0 0 50%;
-    text-align: left;
-    margin-right:0;
-    margin-top: .5em;
-}
-
-#funding  .container p{
-    margin-top: 0;
-    padding-right: 0.5rem;
-}
-
-#funding  .flex-container h2{
-    text-align: left;
-}
+    position: relative;
+    margin-bottom: 3vh;
+    text-align: center;
+    border-radius: 50px; 
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    align-content: center;
+    
+  }
+ 
 

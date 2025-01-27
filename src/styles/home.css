@@ -6,16 +6,18 @@
     font-family: 'pt sans', sans-serif;
 }
 
-main {
+#home main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #b2e0fa ;
+  
+  ;
 }
 
 #home .blackLine {
-    width: 80vw;
+    width: 100vw;
     background-color: #1c1c1c;
 }
 
@@ -41,10 +43,20 @@ h2 {
     font-weight: 400;
 }
 
+
+
+#body-container{
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 8px;
+}
+
 #body-container > *{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: transparent;
 }
 
 /*Section*/
@@ -143,3 +155,18 @@ h2 {
     text-align: left;
 }
 
+
+
+
+#container{
+    /* Main cloud container */
+    display: inline-block;
+    position: relative;
+    padding: 20px 30px;
+    
+    
+    border-radius: 50px;  /* Make the container itself oval/rounded */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    align-content: center;
+  }
+ 

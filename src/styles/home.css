@@ -14,6 +14,11 @@ main {
     background-color: #f9f9f9;
 }
 
+#home .blackLine {
+    width: 80vw;
+    background-color: #1c1c1c;
+}
+
 section {
     width: 100%;
     padding: 0;

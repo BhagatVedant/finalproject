@@ -7,6 +7,7 @@ import Activities from './pages/activities';
 import Support from './pages/support';
 import Preschool from './pages/preschool';
 import Concerns from './pages/concerns';
+import './App.css';
 
 function App() {
     return (

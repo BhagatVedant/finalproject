@@ -4,7 +4,7 @@ import "./styles/footer.css";
 function Footer() {
     return (
         <footer>
-            <div className="blackLine"></div>
+            <div className="blackLine footer"></div>
             
             <div className="follow">
                 <div className="followText">

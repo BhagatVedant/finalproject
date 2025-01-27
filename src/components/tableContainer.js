@@ -99,15 +99,21 @@ function TableContainer() {
 
                 <div className="button">
                     <button onClick={cycleCountyFilter}>
-                        {countyFilter}
+                        <p>
+                            {countyFilter}
+                        </p>
                     </button>
 
                     <button onClick={cycleRatingFilter}>
-                        {ratingFilter}
+                        <p>
+                            {ratingFilter}
+                        </p>
                     </button>
 
                     <button onClick={cycleExpirySort}>
-                        {expirySort}
+                        <p>
+                            {expirySort}
+                        </p>
                     </button>
                 </div>
 

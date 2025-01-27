@@ -22,7 +22,7 @@ th, td {
 }
 
 th {
-    background: #000;
+    background: #225e8a;
     color: #fff;
     text-transform: uppercase;
 }
@@ -40,7 +40,7 @@ tr:nth-of-type(even):hover {
 }
 
 tr:last-of-type {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #225e8a;
 }
 
 @media screen and (max-width: 768px) {

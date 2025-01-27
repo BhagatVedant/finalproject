@@ -12,7 +12,7 @@ function InspoText({ text }) {
                 </div>
             </div>
             
-            <div className="blackLine"></div>
+            <div className="blackLine header"></div>
         </section>
     );
 }

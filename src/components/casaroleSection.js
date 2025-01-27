@@ -109,7 +109,7 @@ function CasaroleSection({ sectionName }) {
 
     function renderCards() {
         if (sectionData.length <= 4) {
-            const basisValue = (100 / sectionData.length) - 4;
+            const basisValue = (100 / sectionData.length) - (4 - sectionData.length);
 
             return (
                 <div className="casaroleCardHolderLessThanFive">

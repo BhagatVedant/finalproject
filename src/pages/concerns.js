@@ -3,6 +3,7 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import InspoText from '../components/inspoText';
 import TextSection from '../components/textSection';
+import ImageTextBox from '../components/imageTextBox';
 import Footer from '../components/footer';
 import '../styles/concerns.css';
 
@@ -34,6 +35,8 @@ function Concerns() {
                 />
 
                 <TextSection sectionId={pageData[0]} />
+
+                <ImageTextBox sectionName={pageData[1]} />
             </main>
             <Footer />
         </div>

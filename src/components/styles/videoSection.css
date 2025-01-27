@@ -1,0 +1,101 @@
+.boxLogo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#videoContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+.boxDescription{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+
+.boxVideo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.boxVideo iframe {
+    width: 900px; /* Set the desired width */
+    height: 500px; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+}
+
+.videoLinks{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#videoContainer{
+    max-width: 80vw;
+    align-content: center;
+}
+
+
+.videoLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.videoLinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+.videoLinks ul li {
+    list-style: none;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.35) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+    padding: 0.5rem 2%;
+    padding: 0.5rem 2%;
+    width: 96%;
+    border-radius: 10px;
+}
+
+.videoLinks ul li:hover {
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.3) 40%,
+            rgba(0, 0, 0, 0.45) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+}
+
+.videoLinks ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 0.9rem;
+    font-weight: 700;
+}

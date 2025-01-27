@@ -1,53 +1,73 @@
 import React, { useState, useEffect } from 'react';
+import './styles/imageTextBox.css';
 
-
-function ImageTextBox({ gid }) {
-
-    const [sectionData, setSectionData] = useState(null);
+function ImageTextBox({ sectionName }) {
+    const [sectionData, setSectionData] = useState([]);
 
     useEffect(() => {
         fetch("./kyKids.json")
-            .then((responese) => responese.json())
+            .then((response) => response.json())
             .then((data) => {
-                const tempData = data.find((data) => data.gid === gid);
-                setSectionData(tempData)
-                console.log(data)
-                console.log(tempData)
+                const tempData = data.filter((item) => item.sectionId === sectionName);
+                setSectionData(tempData);
             })
             .catch((error) => console.error("Error loading JSON:", error));
-    }, [gid])
+    }, [sectionName]);
 
-    if (!sectionData) {
+    if (sectionData.length === 0) {
         return <p>Loading....</p>
     }
 
     return (
         <section id={"ImageContainer"}>
-            <div className='boxLogo'>
-                <img src={sectionData.logo} alt="logo"></img>
-            </div>
+            {sectionData.map((item) => (
+                <div className='imageCard'>
+                    <div className="boxLogo">
+                        <img src={item.logo} alt="logo image"></img>
+                    </div>
 
-            <div className="title">
-                <h2>{sectionData.title}</h2>
-            </div>
+                    <div className="boxText">
+                        <div className="titlebox">
+                            <h2>{item.title}</h2>
+                        </div>
 
-            <div className="links">
-                {Array.isArray(sectionData.links) ? (
-                    sectionData.links.map((item, index) => (
-                        <a href={item.link} key={index}>{item.text}</a>))
-                ) : null
-                }
-            </div>
+                        <div className="boxDescription">
+                            {Array.isArray(item.description) ? (
+                                
+                                item.description.length > 0 ? (
+                                item.description.map((desc, index) => <p key={index}>{desc}</p>)
+                                ) : null 
+                            ) : (
+                                
+                                item.description ? <p>{item.description}</p> : null
+                            )}
+                        </div>
 
-            <div className='phone'>
-                <p>{sectionData.phone}</p>
-            </div>
+                        <div className="imageLinks">
+                            <ul>
+                                {item.links?.map((link) => (
+                                    <li key={link.text}>
+                                        <a
+                                            href={link.link}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {link.text}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-            <div className='boxDescription'> 
-                <p>{sectionData.description}</p>
-            </div>
+                        <div className='phone'>
+                            <p>{item.phone}</p>
+                        </div>
 
-
+                        
+                        
+                    </div>
+                </div>
+            ))}
         </section>
     );
 

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './styles/videoSection.css';
+
 
 function VideoSection({ sectionName }) {
     const [sectionData, setSectionData] = useState([]);
@@ -14,7 +16,7 @@ function VideoSection({ sectionName }) {
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionName]);
 
-    if (!sectionData) {
+    if (sectionData.length === 0) {
         return <p>Loading....</p>
     }
 

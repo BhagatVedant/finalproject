@@ -4,6 +4,7 @@ import './styles/imageTextBox.css';
 function ImageTextBox({ sectionName }) {
     const [sectionData, setSectionData] = useState([]);
 
+
     useEffect(() => {
         fetch("./kyKids.json")
             .then((response) => response.json())
@@ -14,6 +15,7 @@ function ImageTextBox({ sectionName }) {
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionName]);
 
+   
     if (sectionData.length === 0) {
         return <p>Loading....</p>
     }
@@ -71,7 +73,7 @@ function ImageTextBox({ sectionName }) {
         </section>
     );
 
-
 }
+
 
 export default ImageTextBox;

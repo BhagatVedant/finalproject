@@ -1,6 +1,6 @@
 #container{
     display:flex;
-    max-width: 80vw;
+    max-width: 84vw;
     flex-wrap:wrap;
 }
 

@@ -27,7 +27,7 @@
 }
 
 #home .blackLine {
-    width: 80vw;
+    width: 100vw;
     background-color: #1c1c1c;
 
 }
@@ -38,7 +38,7 @@ section {
 }
 
 .container {
-    width: 80vw;
+    width: 84vw;
     text-align: center;
 }
 
@@ -85,3 +85,18 @@ main section:nth-of-type(3){
   }
  
 
+
+
+
+#container{
+    /* Main cloud container */
+    display: inline-block;
+    position: relative;
+    padding: 20px 30px;
+    
+    
+    border-radius: 50px;  /* Make the container itself oval/rounded */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    align-content: center;
+  }
+ 

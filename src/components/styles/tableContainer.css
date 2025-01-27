@@ -42,8 +42,8 @@ hr {
     transform: translate(-5px, -5px);
     background:
         radial-gradient(circle at center,
-            rgba(0, 0, 0, 0.2) 40%,
-            rgba(0, 0, 0, 0.35) 100%),
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.25) 100%),
         url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
     transition: all 0.2s ease-in-out;
 }

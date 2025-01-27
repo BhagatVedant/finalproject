@@ -1,6 +1,6 @@
 .column-section {
     margin: 20px 0;
-    width: 80vw;
+    width: 84vw;
 }
 
 .columnItem {
@@ -82,8 +82,8 @@
 
 .columnLinks ul li:hover {
     background: radial-gradient(circle at center,
-            rgba(0, 0, 0, 0.25) 40%,
-            rgba(0, 0, 0, 0.4) 100%),
+            rgba(0, 0, 0, 0.3) 40%,
+            rgba(0, 0, 0, 0.45) 100%),
         url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
 }
 

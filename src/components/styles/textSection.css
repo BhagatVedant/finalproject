@@ -1,0 +1,13 @@
+#container{
+    display:flex;
+    max-width: 80vw;
+    flex-wrap:wrap;
+}
+
+#container .title {
+    flex-basis: 50%;
+}
+
+#container .text {
+    flex-basis: 50%;
+}

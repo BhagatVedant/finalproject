@@ -22,9 +22,10 @@ th, td {
 }
 
 th {
-    background: #225e8a;
-    color: #fff;
+    background-color: #225e8a;
+    color: #f9f9f9;
     text-transform: uppercase;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 tr:hover {

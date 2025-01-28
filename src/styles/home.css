@@ -3,10 +3,9 @@
 
 #home {
     width: 100%;
-    font-family: 'pt sans', sans-serif;
 }
 
-#container .title h2{
+#container .title h2 {
     text-align: center;
 }
 
@@ -17,19 +16,14 @@
     align-items: center;
     background-color: #f9f9f9;
 }
-#home footer .blackLine{
-    background-color: #1c1c1c;
-    width: 100vw;
-}
 
-#home footer{
-    background:  #f9f9f9;
+#home footer {
+    background: #f9f9f9;
 }
 
 #home .blackLine {
-    width: 100vw;
+    width: 100%;
     background-color: #1c1c1c;
-
 }
 
 section {
@@ -42,61 +36,29 @@ section {
     text-align: center;
 }
 
-h2 {
-    
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    color: #1c1c1c;
-    font-weight: 400;
-}
-
-
-
-#body-container{
-    display:flex;
+#body-container {
+    display: flex;
     flex-direction: column;
     background-color: transparent;
     gap: 8px;
-    
 }
 
-#body-container > *{
-    display:flex;
+#body-container > * {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: transparent;
 }
 
-
-
-main section:nth-of-type(3){
-    display: inline-block;
-    position: relative;
-    margin-bottom: 3vh;
-    text-align: center;
-    border-radius: 50px; 
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    align-content: center;
-    
-  }
- 
-
-
-
-
-#container{
+#container {
     /* Main cloud container */
     display: inline-block;
     position: relative;
     padding: 20px 30px;
-    
-    
-    border-radius: 50px;  /* Make the container itself oval/rounded */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+
+    border-radius: 50px;
+    /* Make the container itself oval/rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     align-content: center;
-  }
- 
+}

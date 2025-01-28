@@ -5,9 +5,18 @@
 }
 
 .single-item-content {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     width: 100%;
+    background-color: white;
+    border-top: #225e8a 10px solid;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
+
+.single-item-content:hover {
+    box-shadow: rgba(34, 94, 138, 0.5) 0px 0px 10px 0px;
 }
 
 .single-item-content > * {
@@ -15,9 +24,10 @@
 }
 
 .single-item-content img {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
+    border-radius: 0 0 0 20px;
 }
 
 .single-item-text {
@@ -29,7 +39,7 @@
 }
 
 .single-item-text h2 {
-    font-size: 2rem;;
+    font-size: 2rem;
 }
 
 .single-item-text p {

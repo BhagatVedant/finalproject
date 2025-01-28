@@ -35,6 +35,7 @@ function Activities() {
                     }
                 />
 
+                <h1>Free Programs for Kids Under 5 in Boyle & Mercer</h1>
                 <VideoSection sectionName={pageData[0]} />
                 
                 <SingleItemSection sectionId={pageData[1]} />

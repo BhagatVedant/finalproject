@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./styles/singleItemSection.css";
 
-function SingleItemSection({ sectionId }) {
+function SingleItemSection({ sectionId, showTitle = true }) {
     //Storing Requested Section Data
     const [sectionData, setSectionData] = useState({});
 
@@ -20,7 +20,7 @@ function SingleItemSection({ sectionId }) {
 
     return (
         <section className="single-item-section">
-            <h1>{sectionData.sectionTitle}</h1>
+            {showTitle && <h1>{sectionData.title}</h1>}
 
             <div className="single-item-content">
                 <img src={sectionData.logo} alt={sectionData.title} />

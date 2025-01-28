@@ -24,39 +24,39 @@ function VideoSection({ sectionName }) {
         <section id="videoContainer">
             {sectionData.map((item) => (
                 <div className='videoCard'>
-                    <div className="boxLogo">
-                        <img src={item.logo} alt="logo image"></img>
-                    </div>
+                    <div className='notVideoBox'>
+                        <div className='videoLogo'>
+                            <img src={item.logo} alt={item.title} />
+                        </div>
 
-                    <div className="title">
-                        <h2>{item.title}</h2>
-                    </div>
+                        <div className="boxText">
+                            <h2>{item.title}</h2>
 
-                    <div className="boxDescription">
-                        {item.description.map((link) => (
-                            <p>{item.description}</p>
-                        ))}
-                    </div>
-
-                    <div
-                        className="boxVideo"
-                        dangerouslySetInnerHTML={{ __html: item.video }}
-                    />
-
-                    <div className="videoLinks">
-                        <ul>
-                            {item.links?.map((link) => (
-                                <li key={link.text}>
-                                    <a
-                                        href={link.link}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        {link.text}
-                                    </a>
-                                </li>
+                            {item.description.map((link) => (
+                                <p>{item.description}</p>
                             ))}
-                        </ul>
+
+                            <div className="videoLinks">
+                                <ul>
+                                    {item.links?.map((link) => (
+                                        <li key={link.text}>
+                                            <a
+                                                href={link.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                {link.text}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div
+                            className="boxVideo"
+                            dangerouslySetInnerHTML={{ __html: item.video }}
+                        />
                     </div>
                 </div>
             ))}

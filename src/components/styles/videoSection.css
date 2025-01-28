@@ -1,57 +1,71 @@
-.boxLogo{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+#videoContainer {
+    padding: 20px;
+    margin: 10px 0;
+    width: 84vw;
 }
 
-
-
-#videoContainer{
-    display:flex;
+.videoCard {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-
-
-.boxDescription{
-    display:flex;
-    align-items: center;
+.notVideoBox {
+    margin-top: 10px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border-top: #225e8a 10px solid;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
+
+.notVideoBox:hover {
+    box-shadow: rgba(34, 94, 138, 0.75) 0px 0px 10px 0px;
+}
+
+.notVideoBox > * {
+    flex-basis: 48%;
+}
+
+.notVideoBox img {
+    margin-left: 1%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 0 20px;
+}
+
+.boxText {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
+    padding: 0 10px;
+    margin: 20px 0;
 }
 
-
-
-.boxVideo{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
+.boxText h2 {
+    font-size: 2rem;
 }
 
-
-
-.boxVideo iframe {
-    width: 900px; /* Set the desired width */
-    height: 500px; /* Maintain the aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow the container */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+.boxText p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 90%;
 }
-
-.videoLinks{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#videoContainer{
-    max-width: 80vw;
-    align-content: center;
-}
-
 
 .videoLinks {
     display: flex;
@@ -67,14 +81,15 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     gap: 1rem;
+    margin-bottom: 20px;
 }
 
 .videoLinks ul li {
     list-style: none;
-    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
     background:
         radial-gradient(circle at center,
             rgba(0, 0, 0, 0.2) 40%,
@@ -98,4 +113,19 @@
     color: #f9f9f9;
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.boxVideo {
+    flex-basis: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.boxVideo iframe {
+    height: 85vh;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
 }

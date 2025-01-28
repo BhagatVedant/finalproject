@@ -1,35 +1,116 @@
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    color: #1c1c1c;
-    font-weight: 400;
-    text-align: left;
-}
-
 #ImageContainer {
-    max-width: 74vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 84vw;
+    margin: 25px 0;
 }
 
+.imageCard {
+    box-sizing: border-box;
+    padding: 0 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+.imageStuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-top: #225e8a 10px solid;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+}
 
+.imageStuff:hover {
+    box-shadow: rgba(34, 94, 138, 0.65) 0px 0px 10px 0px;
+}
 
+.imageCard img {
+    margin-top: 5px;
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
 
-
-.titlebox h2{
+.imageCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 0 1rem;
 }
 
-.boxText .boxDescription {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    text-align: left
-    ;
+.imageCardText h2 {
+    font-size: 2rem;
+    margin-bottom: 5px;
 }
 
-.boxText ul{
+.boxDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imageCardText p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.imageLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.imageLinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.imageLinks ul li {
     list-style: none;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    background:
+        radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.2) 40%,
+            rgba(0, 0, 0, 0.35) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+    padding: 0.5rem 2%;
+    padding: 0.5rem 2%;
+    width: 96%;
+    border-radius: 10px;
 }
+
+.imageLinks ul li:hover {
+    background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0.3) 40%,
+            rgba(0, 0, 0, 0.45) 100%),
+        url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
+}
+
+.imageLinks ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+

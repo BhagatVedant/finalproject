@@ -121,25 +121,26 @@ function CasaroleSection({ sectionName }) {
                                 flex: `0 0 ${basisValue}%`,
                             }}
                         >
-
-                            <img src={item.logo} alt={item.title} />
-                            <div className="casaroleText">
-                                <h2>{item.title}</h2>
-                                <p>{item.description}</p>
-                                <div className="casaroleLinks">
-                                    <ul>
-                                        {item.links?.map((link) => (
-                                            <li key={link.text}>
-                                                <a
-                                                    href={link.link}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                >
-                                                    {link.text}
-                                                </a>
-                                            </li>
-                                        ))}
-                                    </ul>
+                            <div className="casaroleContent">
+                                <img src={item.logo} alt={item.title} />
+                                <div className="casaroleText">
+                                    <h2>{item.title}</h2>
+                                    <p>{item.description}</p>
+                                    <div className="casaroleLinks">
+                                        <ul>
+                                            {item.links?.map((link) => (
+                                                <li key={link.text}>
+                                                    <a
+                                                        href={link.link}
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        {link.text}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

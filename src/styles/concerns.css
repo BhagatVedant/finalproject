@@ -5,10 +5,6 @@ main {
     align-items: center;
 }
 
-#concerns #container {
-    border-top: 8px solid #1c1c1c;
-}
-
 #concerns #container > * {
     margin: 0 10px;
 }
@@ -31,4 +27,22 @@ main {
 
 #concerns .title h2 {
     margin-top: 16px;
+}
+
+#whatToDo .bannerLine:first-of-type {
+    display: none;
+}
+
+#concerns .blackLine.header {
+    background-color: #1c1c1c;
+    max-width: 80vw;
+    margin-left: -4vw;
+}
+
+#concerns hr {
+    border-color: rgba(0,0,0,0.15);
+}
+
+#concerns section:last-of-type {
+    margin-bottom: 16px;
 }

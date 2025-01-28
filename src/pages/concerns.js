@@ -5,7 +5,10 @@ import InspoText from '../components/inspoText';
 import TextSection from '../components/textSection';
 import ImageTextBox from '../components/imageTextBox';
 import Footer from '../components/footer';
+import Banner from '../components/banner';
+import img from '../imgs/curiousKid.png'
 import '../styles/concerns.css';
+
 
 function Concerns() {
     const pageData = ["whatToDo", "AddressConcerns"];
@@ -35,7 +38,9 @@ function Concerns() {
                 />
 
                 <div id='whatToDo'>
+                    <Banner imgURL={img} />
                     <TextSection sectionId={pageData[0]} />
+                    <hr></hr>
                 </div>
                 
                 <ImageTextBox sectionName={pageData[1]} />

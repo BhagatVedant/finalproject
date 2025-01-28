@@ -25,11 +25,9 @@ function Childcare() {
                     text={
                         <>
                             <p>
-                                "Every child can have a strong start when families,
+                            "Every child blossoms with love, care, and a nurturing environment."
                             </p>
-                            <p>
-                                communities, and schools work together."
-                            </p>
+                           
                         </>
                     }
                 />

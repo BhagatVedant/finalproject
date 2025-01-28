@@ -26,10 +26,10 @@ function Preschool() {
                     text={
                         <>
                             <p>
-                                "Every child can have a strong start when families,
+                            "Building a strong foundation for every child through 
                             </p>
                             <p>
-                                communities, and schools work together."
+                            love, learning, and support in preschool."
                             </p>
                         </>
                     }

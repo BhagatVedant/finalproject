@@ -25,10 +25,10 @@ function Concerns() {
                     text={
                         <>
                             <p>
-                                "Every child can have a strong start when families,
+                            "Together, we address every concern with care, 
                             </p>
                             <p>
-                                communities, and schools work together."
+                            ensuring your child’s preschool journey is happy and successful."
                             </p>
                         </>
                     }

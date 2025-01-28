@@ -32,7 +32,7 @@ section {
 }
 
 .container {
-    width: 84vw;
+    width: 80vw;
     text-align: center;
 }
 
@@ -50,15 +50,34 @@ section {
     background-color: transparent;
 }
 
-#container {
-    /* Main cloud container */
+#home main section:nth-of-type(3) {
     display: inline-block;
     position: relative;
-    padding: 20px 30px;
-
-
+    margin-bottom: 3vh;
+    text-align: center;
     border-radius: 50px;
-    /* Make the container itself oval/rounded */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     align-content: center;
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 50px;
+    box-shadow: 6px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+#home main section:nth-of-type(3)::before {
+    background-image: url("../imgs/kidrun.jpg");
+    display: block;
+    background-size: contain;
+    border-radius: 50px 50px 0 0;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -68px;
+    height: 40vh;
+    width: auto;
+    content: "";
+    position: relative;
+    top: -20px;
 }

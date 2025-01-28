@@ -25,10 +25,10 @@ function Support() {
                     text={
                         <>
                             <p>
-                                "Every child can have a strong start when families,
+                            "With care, support, and understanding, 
                             </p>
                             <p>
-                                communities, and schools work together."
+                            we help every preschooler grow, learn, and thrive."
                             </p>
                         </>
                     }

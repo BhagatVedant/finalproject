@@ -26,10 +26,10 @@ function Activities() {
                     text={
                         <>
                             <p>
-                                "Every child can have a strong start when families,
+                            "Through play, creativity, and exploration, 
                             </p>
                             <p>
-                                communities, and schools work together."
+                                every child discovers their potential."
                             </p>
                         </>
                     }

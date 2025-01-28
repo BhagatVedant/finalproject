@@ -42,14 +42,15 @@ hr {
     transform: translate(-5px, -5px);
     background:
         radial-gradient(circle at center,
-            rgba(0, 0, 0, 0.1) 40%,
-            rgba(0, 0, 0, 0.25) 100%),
+            rgba(0, 0, 0, 0.275) 40%,
+            rgba(0, 0, 0, 0.4) 100%),
         url('../../imgs/buttonBackground1.jpg') no-repeat center center/cover;
     transition: all 0.2s ease-in-out;
 }
 
 .button button p {
     color: #f9f9f9;
+    font-weight: bold;
     margin: 0;
     padding: 0;
 }
@@ -79,7 +80,7 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
+    .tableContainer h1 {
         font-size: 2rem;
     }
 
@@ -88,7 +89,7 @@ hr {
         gap: 0.5em;
     }
 
-    button {
+    .button button {
         font-size: 14px;
     }
 
@@ -100,7 +101,7 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
+    .tableContainer h1 {
         font-size: 1.5rem;
     }
 
@@ -109,7 +110,7 @@ hr {
         gap: 0.5em;
     }
 
-    button {
+    .button button {
         font-size: 12px;
     }
 

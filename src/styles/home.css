@@ -9,75 +9,36 @@
     text-align: center;
 }
 
-#home main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-}
-
-#home footer {
-    background: #f9f9f9;
-}
-
 #home .blackLine {
-    width: 100%;
     background-color: #1c1c1c;
-}
-
-section {
-    width: 100%;
-    padding: 0;
-}
-
-.container {
     width: 80vw;
-    text-align: center;
+    margin: 0 10vw;
 }
 
-#body-container {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    gap: 8px;
+#home #container {
+    width: 80vw;
 }
 
-#body-container > * {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: transparent;
+#home #container h2 {
+    margin-top: 5px;
 }
 
-#home main section:nth-of-type(3) {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 3vh;
-    text-align: center;
-    border-radius: 50px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
-    align-content: center;
-    display: inline-block;
-    position: relative;
-    padding-top: 20px;
-    border-radius: 50px;
-    box-shadow: 6px rgba(0, 0, 0, 0.1);
-    align-content: center;
-    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+#home #container .text {
+    margin-top: 0;
 }
 
-#home main section:nth-of-type(3)::before {
-    background-image: url("../imgs/kidrun.jpg");
-    display: block;
-    background-size: contain;
-    border-radius: 50px 50px 0 0;
-    background-size: cover;
-    background-position: center;
-    background-position-y: -68px;
-    height: 40vh;
-    width: auto;
-    content: "";
-    position: relative;
-    top: -20px;
+#home #container p {
+    margin: 5px 0;
+}
+
+#home #missionSection .bannerLine:first-of-type {
+    display: none;
+}
+
+#home #missionSection {
+    margin-bottom: 20px;
+}
+
+#home #membersSection {
+    margin-bottom: 20px;
 }

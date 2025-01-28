@@ -3,5 +3,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
+}
+
+#support .single-item-section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#support .single-item-section h1 {
+    padding-top: 0;
 }

@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# **KY KIDS WEBSITE [DESKTOP]**  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Contributors**  
+- Vedant Bhagat  
+- Tommy Yu  
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **Features**  
+- **Cloud Theme**: A big cloud image greets the user, creating a calm and playful atmosphere.  
+- **Inspirational Quotes**: Each page includes a quote with a moving background.  
+- **Scrolling Effects**: When scrolled, the navbar and hero image get a darker overlay to improve contrast.  
+- **Banner Images**: Each section features banner images that convey specific emotions requested by the client.  
+- **Footer Sections**: Includes *Follow Us*, *At a Glance*, and *Looking for Something?* sections.  
+- **Interactive Buttons**:  
+  - Follow Us buttons enlarge when hovered over.  
+  - Looking for Something buttons move up slightly when hovered, creating a 3D effect.  
+  - Clicking a button takes the user to a new page or scrolls to the relevant section.  
+- **Card-Based Design**:  
+  - Most content is displayed in cards with a sharp top edge and rounded bottom corners for a child-friendly feel.  
+  - Cards with links have custom backgrounds, which darken when hovered.  
+  - Hovering over any card creates a blue shadow effect.  
+  - On the Childcare page, hovering over cards makes them grow larger.  
+- **Sortable Tables**:  
+  - Sorting buttons have animations that make them appear pressed when clicked.  
+  - If no matching data is found, a message is displayed.  
+  - A line is added at the last row to create a gap between table and other content.  
+- **Activities Section**:  
+  - Uses the same card design.  
+  - Videos in the first section are enlarged for easy viewing without leaving the website.  
+- **Carousel Sections**:  
+  - Used when there are more than five cards in a section.  
+  - Scrolls infinitely.  
+  - Buttons darken when hovered and grow larger when clicked.  
+- **Consistent Layout**:  
+  - Images and cards are set to equal heights for a clean, professional look.  
+  - Text-only sections have headers on the left and content on the right for readability.  
+- **Visual Enhancements**:  
+  - The background is a darker shade of white to improve contrast and reduce eye strain.  
+  - Fonts are changed to more playful, child-friendly styles.  
+  - Black and blue separator lines improve organization.  
+  - Everything is aligned for aesthetic appeal and readability.  
+  - Shadows are used for contrast to improve legibility.  
+  - Everything adheres to the color palette to improve aesthetic.  

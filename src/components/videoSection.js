@@ -22,6 +22,8 @@ function VideoSection({ sectionName }) {
 
     return (
         <section id="videoContainer">
+            <h1>{sectionData[0].sectionTitle}</h1>
+
             {sectionData.map((item) => (
                 <div className='videoCard'>
                     <div className='notVideoBox'>

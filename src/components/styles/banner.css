@@ -1,32 +1,30 @@
 #bannerSection {
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
 #banner {
-    background: url('../../imgs/inspoBG.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: 50vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.25);
 }
 
-#banner .quote {
+#banner h1 {
     font-family: 'Raleway', sans-serif;
     color: #f9f9f9;
     text-align: center;
     font-size: 2.5rem;
 }
 
-#banner .blackLine {
-    width: 80vh;
+#bannerSection .bannerLine {
+    width: 80%;
     height: 10px;
     background-color: #1c1c1c;
 }

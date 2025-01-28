@@ -1,13 +1,28 @@
-#container{
-    display:flex;
-    max-width: 80vw;
-    flex-wrap:wrap;
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 84vw;
+    margin: 20px 0;
 }
 
 #container .title {
     flex-basis: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#container .title h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: #1c1c1c;
+    text-align: left;
 }
 
 #container .text {
     flex-basis: 50%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

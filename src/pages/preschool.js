@@ -26,10 +26,10 @@ function Preschool() {
                     text={
                         <>
                             <p>
-                            "Building a strong foundation for every child through 
+                                "Building a strong foundation for every child through
                             </p>
                             <p>
-                            love, learning, and support in preschool."
+                                love, learning, and support in preschool."
                             </p>
                         </>
                     }
@@ -37,9 +37,11 @@ function Preschool() {
 
                 <SingleItemSection sectionId={pageData[0]} />
 
-                {pageData.slice(1,3).map((sectionName) => (
-                    <CasaroleSection sectionName={sectionName} />
-                ))}
+                <div id='schools'>
+                    {pageData.slice(1, 3).map((sectionName) => (
+                        <CasaroleSection sectionName={sectionName} />
+                    ))}
+                </div>
             </main>
 
             <Footer />

@@ -206,7 +206,7 @@ function CasaroleSection({ sectionName }) {
 
     //Render the component when the section data is loaded
     return (
-        <div className="casaroleSection">
+        <div className="casaroleSection" id = {`${sectionName}Section`}>
             <h1>{sectionData[0].sectionTitle}</h1>
 
             {renderCards()}

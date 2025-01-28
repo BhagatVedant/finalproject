@@ -34,7 +34,7 @@ function Childcare() {
 
                 <ColumnSection sectionName={pageData[0]} />
 
-                <div className='cointainer'>
+                <div className='cointainer' id='table'>
                     <TableContainer />
                 </div>
             </main>

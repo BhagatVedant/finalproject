@@ -16,9 +16,13 @@ function ColumnSection({ sectionName }) {
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionName]);
 
+    if (sectionData.length === 0) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <section className="column-section">
-            <h1>{sectionData.sectionTitle}</h1>
+            <h1>{sectionData[0].sectionTitle}</h1>
 
             {sectionData.map((item) => (
                 <div className="columnItem">

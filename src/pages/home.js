@@ -3,11 +3,27 @@ import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import InspoText from '../components/inspoText';
 import TextSection from '../components/textSection';
+import Banner from '../components/banner';
 import Footer from '../components/footer';
+import kidRun from '../imgs/kidrun.jpg';
+import kidSun from '../imgs/sun.jpg';
+import kidHi from '../imgs/234.jpg';
 import '../styles/home.css';
 
 function Home() {
-    const pageData = ["mission", "members", "funding"];
+    const pageData = [
+        {
+            name: "mission",
+            img: kidSun,
+        },
+        {
+            name: "members",
+            img: kidHi,
+        },
+        {
+            name: "funding",
+            img: kidRun,
+        }];
 
     return (
         <div id="home">
@@ -36,13 +52,12 @@ function Home() {
                     }
                 />
 
-                <div id="body-container">
-
-                    <TextSection sectionId={"mission"} />
-                    <TextSection sectionId={"members"} />
-                    <TextSection sectionId={"funding"} />
-                    
-                </div>
+                {pageData.map((section) => (
+                    <div id={`${section.name}Section`}>
+                        <Banner imgURL={section.img} />
+                        <TextSection sectionId={section.name} />
+                    </div>
+                ))}
             </main>
 
             <Footer />

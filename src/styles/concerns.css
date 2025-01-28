@@ -3,9 +3,31 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
 }
 
+#concerns #container {
+    border-top: 8px solid #1c1c1c;
+}
+
+#concerns #container > * {
+    margin: 0 10px;
+}
+
+#concerns #container h2 {
+    margin-top: 5px;
+}
+
+#concerns #container .text {
+    margin-top: 0;
+}
+
+#concerns #container p:first-of-type {
+    margin-top: 5px;
+}
+
+#concerns #container p:last-of-type {
+    font-weight: 600;
+}
 
 #concerns .title h2 {
     margin-top: 16px;

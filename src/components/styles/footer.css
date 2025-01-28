@@ -1,14 +1,20 @@
 footer {
     text-align: center;
     width: 100%;
-    height: 55px;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    background-color: #f1f1f1;
+}
+
+.blackLine.footer {
+    width: 100%;
+    height: 8px;
+    background-color: #225e8a;
 }
 
 .follow {
+    z-index: 1;
     width: 100%;
     height: 45px;
     display: flex;
@@ -16,6 +22,7 @@ footer {
     align-items: center;
     background: url('../../imgs/inspoBG.jpg') no-repeat center center;
     background-size: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .followText h3 {
@@ -28,7 +35,6 @@ footer {
 
 .social {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 1vh;
     margin-right: 2vh;
@@ -39,10 +45,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.social a:link, .social a:visited {
-    background-color: transparent;
 }
 
 .social img {
@@ -57,8 +59,93 @@ footer {
     transform: scale(1.2);
 }
 
-.blackLine.footer {
+.color {
+    background: linear-gradient(135deg, #2086d8, #1565c0);
     width: 100%;
-    height: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underFollow {
+    color: #f9f9f9;
+    width: 100%;
+    max-width: 84vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+.footer-glance {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-glance p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.footerLinks {
+    flex: 1;
+    text-align: left;
+    color: #f1f1f1;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+.footerLinks h4 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+footer hr {
+    border: 1px solid #f1f1f1;
+}
+
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footerLinks ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerLinks ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
     background-color: #225e8a;
+    color: #f1f1f1;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    text-align: center;
+}
+
+.footerLinks ul li a:hover {
+    background-color: #1e4e7a;
+    transform: translateY(-2px);
 }

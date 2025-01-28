@@ -9,7 +9,8 @@
     width: 100%;
     margin-bottom: 30px;
     background-color: white;
-    border-radius: 10px;
+    border-top: #225e8a 10px solid;
+    border-radius: 0 0 20px 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
     transition: transform 0.3s ease-in-out;
 }
@@ -17,6 +18,7 @@
 .columnItem:hover {
     transform: scale(1.015);
     transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(34, 94, 138, 0.5) 0px 0px 10px 0px;
 }
 
 .columnItem>* {
@@ -27,7 +29,7 @@
     width: 1px;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0 0 0 20px;
     border-right: 1px solid #f9f9f9;
 }
 
@@ -41,10 +43,10 @@
 
 .columnText p {
     font-size: 1em;
-    color: #666;
+    color: #1c1c1c;
     line-height: 1.5;
     text-align: center;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 90%;
 }

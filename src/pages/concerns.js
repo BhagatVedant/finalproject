@@ -25,17 +25,19 @@ function Concerns() {
                     text={
                         <>
                             <p>
-                            "Together, we address every concern with care, 
+                                "Together, we address every concern with care,
                             </p>
                             <p>
-                            ensuring your child’s preschool journey is happy and successful."
+                                ensuring your child’s preschool journey is happy and successful."
                             </p>
                         </>
                     }
                 />
 
-                <TextSection sectionId={pageData[0]} />
-
+                <div id='whatToDo'>
+                    <TextSection sectionId={pageData[0]} />
+                </div>
+                
                 <ImageTextBox sectionName={pageData[1]} />
             </main>
             <Footer />

@@ -11,7 +11,6 @@ function VideoSection({ sectionName }) {
             .then((data) => {
                 const tempData = data.filter((item) => item.sectionId === sectionName);
                 setSectionData(tempData);
-                console.log("tempData: ", tempData);
             })
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionName]);

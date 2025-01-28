@@ -28,7 +28,6 @@ function Home() {
     return (
         <div id="home">
 
-            {/* Header Section */}
             <Header
                 imgURL={headerImg}
                 title={
@@ -37,7 +36,6 @@ function Home() {
                 }
             />
 
-            {/* Main Content */}
             <main>
                 <InspoText
                     text={

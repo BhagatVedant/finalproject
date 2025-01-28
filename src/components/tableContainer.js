@@ -20,7 +20,7 @@ function TableContainer() {
                 setCSV(data);
                 setFilteredCSV(data);
             })
-            .catch(error => console.log(error));
+            .catch(error => console.error("Error loading CSV:", error));
     }, []);
 
     /*-------------------
@@ -117,7 +117,6 @@ function TableContainer() {
                     </button>
                 </div>
 
-                {/*Check if there is data to display*/}
                 {filteredCSV.length > 0 ? (
                     <Table data={filteredCSV} />
                 ) : (

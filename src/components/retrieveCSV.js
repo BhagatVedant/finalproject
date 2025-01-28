@@ -66,7 +66,6 @@ async function readCSV(url)
 
 async function retrieveCSV(url) 
 {
-    console.log("hi there!");
     const csvData = await readCSV(url);
     const parsedData = parseCSV(csvData);
     return parsedData;

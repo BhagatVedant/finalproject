@@ -39,4 +39,8 @@
   - Black and blue separator lines improve organization.  
   - Everything is aligned for aesthetic appeal and readability.  
   - Shadows are used for contrast to improve legibility.  
-  - Everything adheres to the color palette to improve aesthetic.  
+  - Everything adheres to the color palette to improve aesthetic.
+- **Data Driven Code**  
+  - All data is taken from the given JSON file.  
+  - Each component is designed to be sizable and reusable, allowing for easadjustments and scalability.  
+  - Everything is made scalable, ensuring the website can grow and adapt to future needs with minimal effort.   

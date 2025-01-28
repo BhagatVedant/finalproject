@@ -5,10 +5,8 @@ import "./styles/footer.css";
 function Footer() {
     return (
         <footer>
-            {/* Thin top line or bar */}
             <div className="blackLine footer" />
 
-            {/* Follow Us section */}
             <div className="follow">
                 <div className="followText">
                     <h3>Follow Us</h3>
@@ -38,10 +36,8 @@ function Footer() {
                 </div>
             </div>
 
-            {/* Main footer area with background color */}
             <div className="color">
                 <div className="underFollow">
-                    {/* Left side: "At a Glance" */}
                     <div className="footer-glance">
                         <h3>At a Glance</h3>
                         <hr></hr>
@@ -64,7 +60,6 @@ function Footer() {
                         </p>
                     </div>
 
-                    {/* Right side: "Want to help our cause?" & Other Links */}
                     <nav className="footerLinks">
                         <h3>Looking For Something?</h3>
                         <hr></hr>

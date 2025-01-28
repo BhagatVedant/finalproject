@@ -13,7 +13,6 @@ function SingleItemSection({ sectionId, showTitle = true }) {
             .then((data) => {
                 const tempData = data.find((item) => item.sectionId === sectionId);
                 setSectionData(tempData);
-                console.log(tempData);
             })
             .catch((error) => console.error("Error loading JSON:", error));
     }, [sectionId]);

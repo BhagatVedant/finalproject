@@ -97,7 +97,7 @@ main section:nth-of-type(3){
   }
  
 
-  main section:nth-of-type(3)::before {
+ #home main section:nth-of-type(3)::before {
     background-image:url("../imgs/kidrun.jpg");
     display:block;
     

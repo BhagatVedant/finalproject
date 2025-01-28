@@ -5,3 +5,8 @@ main {
     align-items: center;
     background-color: #f9f9f9;
 }
+
+
+#concerns .title h2 {
+    margin-top: 16px;
+}

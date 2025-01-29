@@ -1,0 +1,700 @@
+[
+    {
+      "sectionId": "programs",
+      "sectionTitle": "Resources Sent to the Home",
+      "gid": "dolly",
+      "logo": "imgs/DPIL_Logo_SMALL.png",
+      "title": "Dolly Parton's Imagination Library",
+      "links": [
+        {
+          "link": "https://imaginationlibrary.com/usa/affiliate/KYBOYLE/",
+          "text": "Boyle County Residents"
+        },
+        {
+          "link": "https://imaginationlibrary.com/usa/affiliate/KYMERCER/",
+          "text": "Mercer County Residents"
+        }
+      ],
+      "description": [
+        "The Imagination Library mails a free high-quality, age-appropriate book to the home address of all registered children each month. Sign up in your county of residence:"
+      ],
+      "video": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/DMeagPEaL6E\" title=\"@imaginationlibrary Announces Statewide Expansion in Kentucky\" width=\"464\"></iframe>"
+    },
+    {
+      "sectionId": "programs",
+      "sectionTitle": "Resources Sent to the Home",
+      "gid": "ready4k",
+      "logo": "imgs/ParentPowered-logo-220x205.png",
+      "title": "Parent Powered",
+      "links": [
+        {
+          "link": "https://www.hkykids.org/signup/danville-ready4k",
+          "text": "Danville City Schools"
+        },
+        {
+          "link": "https://www.hkykids.org/signup/boyle-ready4k",
+          "text": "Boyle County Schools"
+        },
+        {
+          "link": "https://www.hkykids.org/signup/mercer-ready4k",
+          "text": "Mercer County Schools"
+        },
+        {
+          "link": "https://www.hkykids.org/signup/burgin-ready4k",
+          "text": "Burgin City Schools"
+        },
+        {
+          "link": "https://www.hkykids.org/signup/hkykids-ready4k",
+          "text": "Other School Districts"
+        }
+      ],
+      "description": [
+        "ParentPowered Family Engagement Programs help districts, community organizations, and schools strengthen partnerships with families and caregivers birth\u00e2\u20ac\u201cgrade 12 to improve student engagement, attendance, academics, and mental health",
+        "Please select the school district associated with your residential address--even if this is not the school you attend or intend to attend."
+      ],
+      "video": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"714\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/HVb7yfI0HT4\" title=\"Introducing ParentPowered\" width=\"1255\"></iframe>"
+    },
+    {
+      "sectionId": "AtHome",
+      "sectionTitle": "At Home Activities",
+      "gid": "LearnKY",
+      "logo": "imgs/LLKY-square.jpg",
+      "title": "Lets Learn KY log",
+      "links": [
+        {
+          "link": "https://www.letslearnky.org/#together",
+          "text": "Activities"
+        },
+        {
+          "link": "https://www.letslearnky.org/helpful-resources/",
+          "text": "Resources"
+        },
+        {
+          "link": "https://www.letslearnky.org/#kindergarten-readiness",
+          "text": "Kindergarten Readiness"
+        }
+      ],
+      "description": [
+        "Let's Learn Kentucky is an excellent resource for:"
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "cradleSchool",
+      "logo": "imgs/CradleSchool.png",
+      "title": "Cradle School",
+      "links": [
+        {
+          "link": "https://www.danvilleschools.net/families/family-resource-and-youth-services-centers-frysc",
+          "text": "Danville"
+        },
+        {
+          "link": "https://www.facebook.com/mercercountycradleschool/",
+          "text": "Mercer"
+        }
+      ],
+      "description": [
+        "Free educational program for caregivers and children birth to age five. Weekly on-site. Monthly home visits."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "GladysProject",
+      "logo": "imgs/GladysSquare.png",
+      "title": "Gladys Square",
+      "links": [
+        {
+          "link": "https://www.facebook.com/thegladysproject",
+          "text": "The Gladys Project"
+        }
+      ],
+      "description": [
+        "Personalized early literacy program for children ages one to five. Weekly meetings with a volunteer."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "Boylelibrary",
+      "logo": "imgs/bcpl-logo.png",
+      "title": "Boyle County Public Library",
+      "links": [
+        {
+          "link": "https://www.boylepublib.org/",
+          "text": "Boyle Public Library"
+        }
+      ],
+      "description": [
+        "Storytime for toddlers and preschoolers with stories, rhymes, and crafts. Library card to check out materials."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "Mercerlibrary",
+      "logo": "imgs/MercerLib.avif",
+      "title": "Mercer County Public Library",
+      "links": [
+        {
+          "link": "https://www.mcplib.info/",
+          "text": "Mercer Public Library"
+        }
+      ],
+      "description": [
+        "Storytime for toddlers and preschoolers with stories, rhymes, and crafts. Library card to check out materials."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "artCenterBG",
+      "logo": "imgs/ArtCenteSquare.png",
+      "title": "Art Center of the Bluegrass",
+      "links": [
+        {
+          "link": "https://artcenterky.org/",
+          "text": "Art Center of the Bluegrass"
+        }
+      ],
+      "description": [
+        "Lisis Art Lab for free, drop-in creative exploration. Art box with free art kits for take-home fun."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "kinderMusik",
+      "logo": "imgs/KindermusikSquare.png",
+      "title": "Kindermusik",
+      "links": [
+        {
+          "link": "https://www.kindermusik.com/studio/52985",
+          "text": "Kindermusik"
+        }
+      ],
+      "description": [
+        "Music and movement classes for caregivers and children birth to age six. Weekly classes with take-home resources."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "PlaidElephant",
+      "logo": "imgs/Plaid_Elephant_for_IG.jpg",
+      "title": "Plaid Elephant Books",
+      "links": [
+        {
+          "link": "https://plaidelephantbooks.com/",
+          "text": "Plaid Elephant Books"
+        }
+      ],
+      "description": [
+        "Children's bookstore. Free musical storytime on the 3rd Wednesday of the month."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "EpicPlay",
+      "logo": "imgs/epicPlay.png",
+      "title": "Epic Play Center",
+      "links": [
+        {
+          "link": "https://epicplaycenterky.com/",
+          "text": "Epic Play Center"
+        }
+      ],
+      "description": [
+        "An inclusive and safe play environment for children to learn and explore through imaginative play."
+      ]
+    },
+    {
+      "sectionId": "kids-and-parents",
+      "sectionTitle": "Programs for Kids and Parents",
+      "gid": "Parks",
+      "logo": "imgs/ParksSbS.png",
+      "title": "Park",
+      "links": [
+        {
+          "link": "https://www.danvilleky.org/parks-and-rec",
+          "text": "Danville-Boyle County Parks and Recreation"
+        },
+        {
+          "link": "https://www.andersondeancommunitypark.com/",
+          "text": " Anderson Dean Community Park"
+        }
+      ],
+      "description": [
+        "Playgrounds, parks, pools, and sports teams."
+      ]
+    },
+    {
+      "sectionId": "kidAdventures",
+      "sectionTitle": "Programs for Kids to Attend on their own",
+      "gid": "artCenterBGKids",
+      "logo": "imgs/ArtCenteSquare.png",
+      "title": "Art Center of the Bluegrass",
+      "links": [
+        {
+          "link": "https://artcenterky.org/registration/",
+          "text": "Art Center of the Bluegrass"
+        }
+      ],
+      "description": [
+        "Preschool art classes and mini camps."
+      ]
+    },
+    {
+      "sectionId": "kidAdventures",
+      "sectionTitle": "Programs for Kids to Attend on their own",
+      "gid": "kidsmorning",
+      "logo": "imgs/KMOSquare.png",
+      "title": "Kids Morning Out",
+      "links": [
+        {
+          "link": "https://danvillecmc.org/kids-morning-out",
+          "text": "Kids Morning Out at Centenary United Methodist Church"
+        }
+      ],
+      "description": [
+        "Part-time care a few days a week for infants to age five."
+      ]
+    },
+    {
+      "sectionId": "whatToDo",
+      "sectionTitle": "What do I do?",
+      "description": [
+        "It is hard to face a concern about your child's development. Thank you for taking this first step!",
+        "The great news is there are LOTS of resources in our community for folks who have the same concerns as you.",
+        "If you think there could be a problem with the way your child plays, learns, speaks, acts, or moves, talk to your child's doctor and share your concerns. Depending on your child's age, contact First Steps (ages 0-3) or your local school district (ages 3-6) for assistance at no cost to you. Another excellent resource is Kids Can Do in Danville, which provides occupational, physical and speech/language therapy as well as specialized picky eating/problem feeding, infant positioning and breastfeeding support.",
+        "Bottom line: If you suspect an issue, don't wait! Acting early can make a real difference."
+      ]
+    },
+    {
+      "sectionId": "AddressConcerns",
+      "sectionTitle": "Finding Help",
+      "gid": "age03",
+      "logo": "imgs/firststeps.png",
+      "title": "Age 0-3 First Steps",
+      "description": [
+        "First Steps is an early intervention program and serves children from birth to age three who have a developmental delay or a medical condition known to cause a delay. Staff provide screening and determine eligibility for services as well as coordinate services for families. Services are provided in the child's natural environment either at home, daycare or in the community. Parents and caregivers have the opportunity to learn and continue activities to promote child development.",
+        "When you call, say, \"I am concerned about my child's development and would like to request an evaluation. Can you help me or let me speak with someone who can?\"\""
+      ],
+      "phone": "859-271-9448"
+    },
+    {
+      "sectionId": "AddressConcerns",
+      "sectionTitle": "Finding Help",
+      "gid": "age36",
+      "logo": "imgs/school.png",
+      "title": "Age 3-6 Public School",
+      "links": [
+        {
+          "link": "https://www.education.ky.gov/specialed/excep/Pages/default.aspx",
+          "text": "KY Office of Special Education and Early Learning"
+        }
+      ],
+      "description": [
+        "Call your local public school district--even if your child does not go to school there.",
+        "When you call, say, \"I have concerns about my child's development and I would like to have my child evaluated through the school system for preschool special education services.\" If the person who answers is unfamiliar with preschool special education, ask to speak with the school or district's special education director.",
+        "If you do not know which school district to contact or need additional help, contact the state special education office."
+      ],
+      "phone": "502-564-4970"
+    },
+    {
+      "sectionId": "mission",
+      "sectionTitle": "Our Mission",
+      "description": [
+        "We aim to ensure the best early care and education so that every child in Boyle and Mercer counties is ready for kindergarten.  We support collaborative community partnerships to implement evidence-based strategies that address local early childhood needs.",
+        "Kindergarten readiness means children enter school with basic skills that will help them learn and play in the classroom. Learn more here!"
+      ]
+    },
+    {
+      "sectionId": "members",
+      "sectionTitle": "Our Members",
+      "description": [
+        "Our membership includes representatives from the education and early intervention sector including all public school districts located in Boyle and Mercer County, our local Head Start, and our regional office of First Steps.",
+        "To represent the childcare sector, we have members from our regional offices of ChildCare Aware and Child Care Health as well as a number of individual childcare providers.",
+        "From both Boyle and Mercer Counties, we have public partners including UK Cooperative-Extension Offices, Health Departments, and Public Libraries.",
+        "We also partner with local organizations, businesses, and civic organizations including Heart of Kentucky United Way, Ephraim McDowell Health, Centre College, Danville Parks and Recreation, Art Center of the Bluegrass, Whitaker Bank, Plaid Elephant Books, the Gladys Project, Danville-Boyle Early Childhood Alliance, Kiwanis, and Rotary.",
+        "We welcome others to join. Please email chair@hkykids.org."
+      ]
+    },
+    {
+      "sectionId": "funding",
+      "sectionTitle": "Funding and Donations",
+      "description": [
+        "We receive funding from the Kentucky Governor's Office of Early Childhood, local donations, and grants.",
+        "Write \"Heart of KY Kids\" on the memo line.\n            These donations are not tax deductible (we are not a 501(c)(3) organization).",
+        "Dolly Parton Imagination Libraries(DPL) in Boyle and Mercer County are funded separately. Please indicate which library your donation should go toward by writing \"DPIL: Boyle\" or \"DPIL: Mercer\" on the memo line.",
+        "Donations to DPIL are tax deductible as they go to the Dollywood Foundation, which is a 501(c)(3) organization.",
+        "Your generosity enables us to provide critical resources and services for children and their families. Whether you're contributing to Heart of KY Kids or supporting the Dolly Parton Imagination Library, your donation has a direct impact on creating opportunities for children to learn, grow, and thrive.",
+        "Thank you for considering a gift to help us make a difference in the lives of children in our community. Together, we can build a brighter future, one child at a time."
+      ]
+    },
+    {
+      "sectionId": "childcare",
+      "sectionTitle": "Why is a high-quality early learning program important?",
+      "gid": "whyChildcare",
+      "logo": "imgs/lookFor.png",
+      "title": "Why is a high-quality early learning program important?",
+      "links": [
+        {
+          "link": "https://www.childcareawareky.org/wp-content/uploads/2020/04/Examples-of-what-to-look-for-in-Child-Care-setting_3.16.20.pdf",
+          "text": "What should I look for in a high-quality program?"
+        }
+      ],
+      "description": [
+        "Healthy child development depends on safe and positive experiences in the first years of life. Choosing the right early learning program is important."
+      ]
+    },
+    {
+      "sectionId": "childcare",
+      "sectionTitle": "Why is a high-quality early learning program important?",
+      "gid": "choseChildcare",
+      "logo": "imgs/cropped-Child-Care-Aware-of-Kentucky-1.gif",
+      "title": "Need help choosing the right care for your child?",
+      "description": [
+        "ChildCare Aware has resources on choosing care that meets your family's needs. You can also speak with a Child Care Referral Specialist at (877) 316-3552."
+      ]
+    },
+    {
+      "sectionId": "childcare",
+      "sectionTitle": "Why is a high-quality early learning program important?",
+      "gid": "childcareBenefits",
+      "logo": "imgs/kynectBenefitsLogoRGB.jpg",
+      "title": "Are you eligible for help covering the cost of childcare?",
+      "links": [
+        {
+          "link": "https://kynect.ky.gov/s/",
+          "text": "A prescreening tool to check your eligibility."
+        },
+        {
+          "link": "https://www.chfs.ky.gov/agencies/dcbs/dcc/Documents/dcc11319.pdf",
+          "text": "Examples of income eligibility cutoffs as of Jan 1, 2022."
+        }
+      ],
+      "description": [
+        "kynect offers Kentucky state benefits, like childcare assistance, for qualified individuals and families."
+      ]
+    },
+    {
+      "sectionId": "newParents",
+      "sectionTitle": "Programs for New Parents",
+      "gid": "KYHands",
+      "logo": "imgs/HANDSsquare.png",
+      "title": "KY Hands log",
+      "links": [
+        {
+          "link": "https://www.boylehealth.com/portfolio/hands/",
+          "text": "Boyle County"
+        },
+        {
+          "link": "https://mercerkyhd.org/hands",
+          "text": "Mercer County"
+        }
+      ],
+      "description": [
+        "Free, voluntary intensive home visiting program for new or expectant parents to build healthy, safe environments for children."
+      ]
+    },
+    {
+      "sectionId": "newParents",
+      "sectionTitle": "Programs for New Parents",
+      "gid": "Haven",
+      "logo": "imgs/HavenCareSquare.jpg",
+      "title": "Haven Care Center log",
+      "links": [
+        {
+          "link": "https://havencarecenter.org/",
+          "text": "Haven Care Center"
+        }
+      ],
+      "description": [
+        "Confidential, free services for women experiencing an unplanned pregnancy. Baby Boutique with gently used maternity and baby items."
+      ]
+    },
+    {
+      "sectionId": "newParents",
+      "sectionTitle": "Programs for New Parents",
+      "gid": "Ephraim",
+      "logo": "imgs/EphraimMcDowellHealth.png",
+      "title": "Ephraim McDowell Health Care log",
+      "links": [
+        {
+          "link": "https://emhealth.org/service/maternity-care-obstetrics/",
+          "text": "Maternity Care and Obstetrics"
+        }
+      ],
+      "description": [
+        "Ephraim McDowell offers maternity and obstetrics care. They have free classes in childbirth, preparation for breastfeeding, and a sibling class."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "firststeps",
+      "logo": "imgs/firststeps.png",
+      "title": "First Steps log",
+      "links": [
+        {
+          "link": "https://newvista.org/developmental/keis-birth-to-age-3",
+          "text": "First Steps"
+        }
+      ],
+      "description": [
+        "Serving children birth to age three with a developmental delay. Provided in child's natural environment."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "KidsCanDo",
+      "logo": "imgs/EphraimMcDowellHealth.png",
+      "title": "Ephraim McDowell Health Center log",
+      "links": [
+        {
+          "link": "https://emhealth.org/location/ephraim-mcdowell-kids-can-do-pediatric-therapy-center/",
+          "text": "Ephraim McDowell Kids Can Do"
+        }
+      ],
+      "description": [
+        "Provides physical, occupational and speech-language services for birth to age 21 in child-friendly environment."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "HeadStart",
+      "logo": "imgs/headstartSquare.png",
+      "title": "Head Start log",
+      "links": [
+        {
+          "link": "https://www.bluegrasscommunityaction.org/bgcap_head_start.html",
+          "text": "Head Start"
+        }
+      ],
+      "description": [
+        "Head Start is a no-cost early childhood education experience for eligible children and families."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "vips",
+      "logo": "imgs/VIPSSquare.png",
+      "title": "VIPS log",
+      "links": [
+        {
+          "link": "https://vips.org/",
+          "text": "Visually Impaired Preschool Services"
+        }
+      ],
+      "description": [
+        "Provides early intervention services to children with blindness and low vision in child's natural environment."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "KCDHH",
+      "logo": "imgs/KCDHH.jfif",
+      "title": "KCDHH log",
+      "links": [
+        {
+          "link": "https://www.kcdhh.ky.gov/ois/parents.html",
+          "text": "KY Commission on the Deaf and Hard of Hearing"
+        }
+      ],
+      "description": [
+        "The Kentucky Commission for the Deaf and Hard of Hearing acts as an advocate for deaf and hard-of-hearing persons."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "KYACA",
+      "logo": "imgs/KYACA.jfif",
+      "title": "KYACA log",
+      "links": [
+        {
+          "link": "https://www.kyaca.org/",
+          "text": "KY Advisory Council on Autism"
+        }
+      ],
+      "description": [
+        "The Kentucky Advisory Council on Autism promotes collaborative efforts to improve systems of supports for individuals with autism."
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "KYSpin",
+      "logo": "imgs/KYSPIN.jfif",
+      "title": "KY Spin log",
+      "links": [
+        {
+          "link": "https://www.kyspin.com/",
+          "text": "KY-SPIN"
+        }
+      ],
+      "description": [
+        "Kentucky Special Parent Involvement Network links families and individuals with disabilities to valuable resources"
+      ]
+    },
+    {
+      "sectionId": "therapy",
+      "sectionTitle": "Therapy and Developmental Support",
+      "gid": "OSCHCN",
+      "logo": "imgs/specialneeds.jfif",
+      "title": "OCSHCN log",
+      "links": [
+        {
+          "link": "https://www.chfs.ky.gov/agencies/ocshcn/Pages/default.aspx",
+          "text": "Office for Children with Special Health Care Needs"
+        }
+      ],
+      "description": [
+        "The Office for Children with Special Health Care Needs provides comprehensive care to children with special health care needs."
+      ]
+    },
+    {
+      "sectionId": "caregivers",
+      "sectionTitle": "Programs for Caregivers",
+      "gid": "MOPS",
+      "logo": "imgs/MOPS.png",
+      "title": "MOPS log",
+      "links": [
+        {
+          "link": "https://ihccdanville.org/connect/ministries",
+          "text": "MOPS at Indian Hills Christian Church"
+        }
+      ],
+      "description": [
+        "A Christian-based organization holding monthly meetings for mothers of children birth to age five."
+      ]
+    },
+    {
+      "sectionId": "HeadstartSection",
+      "sectionTitle": "Head Start",
+      "gid": "headStartPre",
+      "logo": "imgs/headstartSquare.png",
+      "title": "Head Start log",
+      "links": [
+        {
+          "link": "https://www.bluegrasscommunityaction.org/bgcap_head_start.html",
+          "text": "Head Start"
+        }
+      ],
+      "description": [
+        "Head Start is a full-day program for three- and four-year-olds offered at no cost to families that meet income guidelines."
+      ]
+    },
+    {
+      "sectionId": "PublicPreschool",
+      "sectionTitle": "Public Preschool",
+      "gid": "Boyle",
+      "logo": "imgs/BoyleSquare.png",
+      "title": "Boyle County School",
+      "links": [
+        {
+          "link": "https://www.boyle.kyschools.us/enroll/preschool",
+          "text": "Boyle County School"
+        }
+      ],
+      "description": [],
+      "phone": "859-236-6634"
+    },
+    {
+      "sectionId": "PublicPreschool",
+      "sectionTitle": "Public Preschool",
+      "gid": "Burgin",
+      "logo": "imgs/BurginSquare.png",
+      "title": "Burgin Independent Schools",
+      "links": [
+        {
+          "link": "https://www.burginschool.com/",
+          "text": "Burgin Independent Schools"
+        }
+      ],
+      "description": [],
+      "phone": "859-748-5282"
+    },
+    {
+      "sectionId": "PublicPreschool",
+      "sectionTitle": "Public Preschool",
+      "gid": "Danville",
+      "logo": "imgs/DanvilleSquare.png",
+      "title": "Danville Independent Schools",
+      "links": [
+        {
+          "link": "https://www.danvilleschools.net/departments/preschool",
+          "text": "Danville Independent Schools"
+        }
+      ],
+      "description": [],
+      "phone": "859-238-1313"
+    },
+    {
+      "sectionId": "PublicPreschool",
+      "sectionTitle": "Public Preschool",
+      "gid": "Mercer",
+      "logo": "imgs/MercerSquare.jpg",
+      "title": "Mercer County Schools",
+      "links": [
+        {
+          "link": "https://www.mercer.kyschools.us/parents",
+          "text": "Mercer County Schools"
+        }
+      ],
+      "description": [],
+      "phone": "859-733-7040"
+    },
+    {
+      "sectionId": "PrivatePreschool",
+      "sectionTitle": "Private Preschool",
+      "gid": "DCA",
+      "logo": "imgs/DCASquare.png",
+      "title": "Danville Christian Academy Little School",
+      "links": [
+        {
+          "link": "https://www.dcaky.org/preschool",
+          "text": "Danville Christian Academy Little School"
+        }
+      ],
+      "description": [],
+      "phone": "859-236-2177"
+    },
+    {
+      "sectionId": "PrivatePreschool",
+      "sectionTitle": "Private Preschool",
+      "gid": "Montessori",
+      "logo": "imgs/DanvilleMontessoriSquare.png",
+      "title": "Danville Montessori School",
+      "links": [
+        {
+          "link": "http://www.danvillemontessorischool.org/",
+          "text": "Danville Montessori School"
+        }
+      ],
+      "description": [],
+      "phone": "859-236-9310"
+    },
+    {
+      "sectionId": "PrivatePreschool",
+      "sectionTitle": "Private Preschool",
+      "gid": "LABC",
+      "logo": "imgs/LABCSquare.png",
+      "title": "Lexington Avenue Baptist",
+      "links": [
+        {
+          "link": "https://www.lexingtonavenuebaptistchurch.org/preschool",
+          "text": "Lexington Avenue Baptist Preschool"
+        }
+      ],
+      "description": [],
+      "phone": "859-236-3565"
+    }
+  ]

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/finalproject/static/css/main.7e79b595.css",
+    "main.js": "/finalproject/static/js/main.d76ffc53.js",
+    "static/media/234.jpg": "/finalproject/static/media/234.fbd097f9a7256255a8ce.jpg",
+    "static/media/kidrun.jpg": "/finalproject/static/media/kidrun.74a53d9b92c322a0467b.jpg",
+    "static/media/curiousKid.png": "/finalproject/static/media/curiousKid.989854b3300ab7a1380f.png",
+    "static/media/sun.jpg": "/finalproject/static/media/sun.c29c8fe6809056cf860d.jpg",
+    "static/media/background1.jpg": "/finalproject/static/media/background1.f741ad52777b1ea79b63.jpg",
+    "static/media/inspoBG.jpg": "/finalproject/static/media/inspoBG.1db8096b847e2cd58ccc.jpg",
+    "index.html": "/finalproject/index.html",
+    "main.7e79b595.css.map": "/finalproject/static/css/main.7e79b595.css.map",
+    "main.d76ffc53.js.map": "/finalproject/static/js/main.d76ffc53.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e79b595.css",
+    "static/js/main.d76ffc53.js"
+  ]
+}

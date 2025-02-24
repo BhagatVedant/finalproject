@@ -25,8 +25,9 @@ function Activity() {
     }
 
     return (
-        <div>
-            <h1>{activityData.name}</h1>
+        <div className='activity'>
+            <h1>{activityData.title}</h1>
+            <img src={activityData.logo} alt={activityData.title} />
             <p>{activityData.description}</p>
         </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/navBar';
 import ScrollFix from './components/scrollFix';
 import Home from './pages/home';
@@ -8,6 +8,8 @@ import Activities from './pages/activities';
 import Support from './pages/support';
 import Preschool from './pages/preschool';
 import Concerns from './pages/concerns';
+import Activity from './pages/activity';
+import NoPage from './pages/noPage';
 import './App.css';
 
 
@@ -25,6 +27,8 @@ function App() {
                 <Route path="/support" element={<Support />} />
                 <Route path="/preschool" element={<Preschool />} />
                 <Route path="/concerns" element={<Concerns />} />
+                <Route path="/:activityID" element={<Activity />} />
+                <Route path="*" element={<NoPage />} />
             </Routes>
         </div>
     );

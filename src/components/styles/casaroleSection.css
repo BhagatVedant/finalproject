@@ -263,3 +263,15 @@ button:active p {
     font-size: 0.9rem;
     font-weight: 700;
 }
+
+@media (max-width: 768px) {
+    .casaroleCardHolderLessThanFive {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .casaroleCardHolderLessThanFive .casaroleCard {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

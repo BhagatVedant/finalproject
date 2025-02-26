@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/header';
 import headerImg from '../imgs/background1.jpg';
 import CasaroleSection from '../components/casaroleSection';
@@ -9,6 +10,31 @@ import '../styles/preschool.css';
 
 function Preschool() {
     const pageData = ["HeadstartSection", "PublicPreschool", "PrivatePreschool"];
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const titleH1 = windowWidth < 756 ? (
+        <>
+            Pre
+            <br />
+            School
+        </>
+    ) : (
+        <>
+            Preschool
+        </>
+    );
 
     return (
         <div className='preschool'>
@@ -16,7 +42,7 @@ function Preschool() {
                 imgURL={headerImg}
                 title={
                     <>
-                        Preschool
+                        {titleH1}
                     </>
                 }
             />

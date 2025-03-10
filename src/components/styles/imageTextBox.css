@@ -114,3 +114,20 @@
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .imageCard img {
+        height: 25vh;
+    }
+
+    .imageCardText h2 {
+        font-size: 1.5rem;
+    }
+
+    .imageCardText p {
+        font-size: 0.9rem;
+    }
+
+    .imageLinks ul li a {
+        font-size: 0.8rem;
+    }
+}

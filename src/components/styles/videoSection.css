@@ -32,7 +32,7 @@
     box-shadow: rgba(34, 94, 138, 0.75) 0px 0px 10px 0px;
 }
 
-.notVideoBox > * {
+.notVideoBox>* {
     flex-basis: 48%;
 }
 
@@ -128,4 +128,36 @@
     height: 85vh;
     width: 100%;
     border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 768px) {
+    .notVideoBox {
+        flex-direction: column;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .notVideoBox img {
+        border-radius: 0;
+    }
+
+    .boxText h2 {
+        font-size: 1.5rem;
+    }
+
+    .boxText p {
+        font-size: 1em;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .videoLinks ul li {
+        padding: 0.5rem 2%;
+        width: 96%;
+    }
+
+    .boxVideo iframe {
+        height: 50vh;
+    }
+
 }

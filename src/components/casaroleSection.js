@@ -1,7 +1,19 @@
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import "./styles/casaroleSection.css";
 
 function CasaroleSection({ sectionName }) {
+    //Track the window width
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    //Update the window width when the window is resized
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+        
+
     //Storing Requested Section Data
     const [sectionData, setSectionData] = useState([]);
 
@@ -47,14 +59,16 @@ function CasaroleSection({ sectionName }) {
     function handlePrev() {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setCurrentIndex((prev) => prev - 2);
+        const step = windowWidth < 768 ? 1 : 2;
+        setCurrentIndex((prev) => prev - step);
     }
 
     //Handle the next button click
     function handleNext() {
         if (isTransitioning) return;
         setIsTransitioning(true);
-        setCurrentIndex((prev) => prev + 2);
+        const step = windowWidth < 768 ? 1 : 2;
+        setCurrentIndex((prev) => prev + step);
     }
 
     //Handle the transition end
@@ -162,7 +176,7 @@ function CasaroleSection({ sectionName }) {
                         className="casaroleWrapper"
                         ref={wrapperRef}
                         style={{
-                            transform: `translateX(-${currentIndex * 25}%)`,
+                            transform: `translateX(-${currentIndex * (windowWidth < 768 ? 75 : 25)}%)`,
                         }}
                         onTransitionEnd={handleTransitionEnd}
                     >

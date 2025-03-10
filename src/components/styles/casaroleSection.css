@@ -3,6 +3,10 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .casaroleCardHolderLessThanFive {
@@ -265,13 +269,63 @@ button:active p {
 }
 
 @media (max-width: 768px) {
+    .casaroleSection h1 {
+        margin: 0 10px;
+        padding-top: 0;
+    }
+
     .casaroleCardHolderLessThanFive {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .casaroleCardHolderLessThanFive .casaroleCard {
+        align-self: center;
         width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .casaroleSection {
+        width: 100vw;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+
+    .casaroleWrapper {
+        display: flex;
+        margin: 0 -12.5%;
+        padding: 1rem 0;
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .casaroleCard {
+        flex: 0 0 75%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .casaroleCard img {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .casaroleSection .casaroleText p {
+        width: 100%;
+    }
+
+    .casaroleSection .casaroleLinks {
         margin-bottom: 1rem;
     }
 }

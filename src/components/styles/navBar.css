@@ -42,3 +42,18 @@
     font-weight: bold;
     margin-left: 1rem;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 64px;
+    }
+
+    .navbarList {
+        display: none;
+    }
+
+    .navbarLogo {
+        margin-left: 1rem;
+    }
+    
+}

@@ -35,12 +35,14 @@
 
     #container .title {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
     #container .text {
         width: 100%;
         text-align: center;
-    }
-    
+    } 
 }

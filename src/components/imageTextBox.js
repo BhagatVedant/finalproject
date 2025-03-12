@@ -29,7 +29,7 @@ function ImageTextBox({ sectionName }) {
                     <div className='imageCard'>
                         <div className='imageStuff'>
                             <div className="boxLogo">
-                                <img src={item.logo} alt="logo image"></img>
+                                <img src={item.logo} alt="logo"></img>
                             </div>
 
                             <div className="imageCardText">
